@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      function onClickDiscover() {
+      $(".plan").hide();
+      $(".planbtn").fadeTo('fast',1);
+      $(".act").hide();
+      $(".actbtn").fadeTo('fast',1);
+      $(".measure").hide();
+      $(".measurebtn").fadeTo('fast',1);
+      $(".discover").show();
+      $(".discoverbtn").fadeTo('fast',0.75);
+      $(".openingscreen").hide();
+      }
+      function onClickPlan() {
+      $(".act").hide();
+      $(".actbtn").fadeTo('fast',1);
+      $(".measure").hide();
+      $(".measurebtn").fadeTo('fast',1);
+      $(".discover").hide();
+      $(".discoverbtn").fadeTo('fast',1);
+      $(".plan").show();
+      $(".planbtn").fadeTo('fast',0.75);
+      $(".openingscreen").hide();
+      }
+      function onClickAct() {
+      $(".discover").hide();
+      $(".discoverbtn").fadeTo('fast',1);
+      $(".plan").hide();
+      $(".planbtn").fadeTo('fast',1);
+      $(".measure").hide();
+      $(".measurebtn").fadeTo('fast',1);
+      $(".act").show();
+      $(".actbtn").fadeTo('fast',0.75);
+      $(".openingscreen").hide();
+      }
+      function onClickMeasure() {
+      $(".discover").hide();
+      $(".discoverbtn").fadeTo('fast',1);
+      $(".plan").hide();
+      $(".planbtn").fadeTo('fast',1);
+      $(".act").hide();
+      $(".actbtn").fadeTo('fast',1);
+      $(".measure").show();
+      $(".measurebtn").fadeTo('fast',0.75);
+      $(".openingscreen").hide();
+      }
+      function onClickBegin() {
+      $(".discover").hide();
+      $(".discoverbtn").fadeTo('fast',1);
+      $(".plan").hide();
+      $(".planbtn").fadeTo('fast',1);
+      $(".act").hide();
+      $(".actbtn").fadeTo('fast',1);
+      $(".measure").hide();
+      $(".measurebtn").fadeTo('fast',1);
+      }
+      $(document).ready(onClickBegin);
+    </script>
+
+    <title>lAghavA:lightness of being</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div style="background-image:url('img/titlebg.png');background-repeat:repeat-x;">
+      <div style="margin-left:auto;margin-right:auto;width:70%;height:50px">
+	<div style="height:100%;">
+	  <b style="line-height:50px;font-size:30px;height:100%;"><a style="color:black;" href="index.html">lAghavA:</a></b><i style="font-size:20px;">lightness of Being</i>
+	</div>
+      </div>
+    </div>
+    <div style="margin-top:17px;margin-left:auto;margin-right:auto;width:70%;text-align:center;" >
+      <p class="lead" style="font-size:30px;text-align:center;">Enhancing your life through facilitation and training</p>
+    </div>
+    <div style="margin-left:auto;margin-right:auto;width:70%;height:30%;" >
+      <table style="table-layout:fixed;width:100%;">
+	<tr>
+	  <td>
+	    <img src="img/discover.png" class="discoverbtn" style="cursor:pointer;" onClick="onClickDiscover()"/>
+	  </td>
+	  <td>
+	    <img src="img/plan.png" class="planbtn" style="cursor:pointer;" onClick="onClickPlan()"/>
+	  </td>
+	  <td>
+	    <img src="img/act.png" class="actbtn"  style="cursor:pointer;" onClick="onClickAct()"/>
+	  </td>
+	  <td>
+	    <img src="img/measure.png" class="measurebtn" style="cursor:pointer;" onClick="onClickMeasure()"/>
+	  </td>
+	</tr>
+      </table>
+    </div>
+    <div style="height:250px;">
+	<div class="openingscreen" style="margin-left:auto;margin-right:auto;backgrd-color:#875a91;height:100%;width:70%;text-align:center;">
+	  <p class="lead">Click the squares to learn more about our breakthrough methodology</p>
+	</div>
+	<div class="discover" style="margin-left:auto;margin-right:auto;backgrd-color:#875a91;height:100%;width:70%">
+	  <h1>Discover</h1>
+	  <p class="lead">An authentic look at your life where you will identify aspects of your life that are important to you</p>
+	</div>
+	<div class="plan" style="margin-left:auto;margin-right:auto;backgrd-color:#e5331b;height:100%;width:70%;">
+	  <h1>Plan</h1>
+	  <p class="lead">A weekly call to plan out how we will impact those areas of life identified in <em>Discovery</em>.</p>
+	</div>
+	<div class="act" style="margin-left:auto;margin-right:auto;backgrd-color:#6da747;height:100%;width:70%;">
+	  <h1>Act</h1>
+	  <p class="lead">As your conscious calendar, we will remind you of your commitments and handle things that you dont need to be personally present for.Every step of the way we will be there <b style="font-size:30px;">in person</b> to provide support any time of the day.</p>
+	</div>
+	<div class="measure" style="margin-left:auto;margin-right:auto;backgrd-color:#48a2e8;height:100%;width:70%;">
+	  <h1>Measure</h1>
+	  <p class="lead">We will measure the progress of your various projects and suggest course correction whenever necessary</p>
+	</div>
+    </div>
+    <div style="text-align:center;">
+      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.html">take us for a spin</a> ?</strong>
+    </div>
+  </body>
+</html>
