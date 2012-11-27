@@ -99,4 +99,5 @@ if (!$link) {
 mysql_select_db("laghuserdata",$link);
 mysql_query("insert into interestedUsers value ('$value');",$link);
 mysql_close($link);
+
 redirect_to_success();
