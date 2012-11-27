@@ -1,4 +1,5 @@
 <?php
+include_once("dbconfig.php");
 function redirect_to_home() {
 	header( 'Location: http://www.laghava.com/index.html');
 	exit();
@@ -90,7 +91,7 @@ if (!validEmail($value)) {
 	error_log("invalid email");
 	redirect_to_home();
 }
-$link = mysql_connect('laghuserdata.db.10041875.hostedresource.com','laghuserdata','Lagh@va123');
+$link = mysql_connect(DBHOST,DBUSER,DBPASS);
 if (!$link) {
 	error_log("Could not connect to mysql");
 	redirect_to_home();
