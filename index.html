@@ -4,61 +4,6 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      function onClickDiscover() {
-      $(".plan").hide();
-      $(".planbtn").fadeTo('fast',1);
-      $(".act").hide();
-      $(".actbtn").fadeTo('fast',1);
-      $(".measure").hide();
-      $(".measurebtn").fadeTo('fast',1);
-      $(".discover").show();
-      $(".discoverbtn").fadeTo('fast',0.75);
-      $(".openingscreen").hide();
-      }
-      function onClickPlan() {
-      $(".act").hide();
-      $(".actbtn").fadeTo('fast',1);
-      $(".measure").hide();
-      $(".measurebtn").fadeTo('fast',1);
-      $(".discover").hide();
-      $(".discoverbtn").fadeTo('fast',1);
-      $(".plan").show();
-      $(".planbtn").fadeTo('fast',0.75);
-      $(".openingscreen").hide();
-      }
-      function onClickAct() {
-      $(".discover").hide();
-      $(".discoverbtn").fadeTo('fast',1);
-      $(".plan").hide();
-      $(".planbtn").fadeTo('fast',1);
-      $(".measure").hide();
-      $(".measurebtn").fadeTo('fast',1);
-      $(".act").show();
-      $(".actbtn").fadeTo('fast',0.75);
-      $(".openingscreen").hide();
-      }
-      function onClickMeasure() {
-      $(".discover").hide();
-      $(".discoverbtn").fadeTo('fast',1);
-      $(".plan").hide();
-      $(".planbtn").fadeTo('fast',1);
-      $(".act").hide();
-      $(".actbtn").fadeTo('fast',1);
-      $(".measure").show();
-      $(".measurebtn").fadeTo('fast',0.75);
-      $(".openingscreen").hide();
-      }
-      function onClickBegin() {
-      $(".discover").hide();
-      $(".discoverbtn").fadeTo('fast',1);
-      $(".plan").hide();
-      $(".planbtn").fadeTo('fast',1);
-      $(".act").hide();
-      $(".actbtn").fadeTo('fast',1);
-      $(".measure").hide();
-      $(".measurebtn").fadeTo('fast',1);
-      }
-      $(document).ready(onClickBegin);
     </script>
 
     <title>lAghavA:lightness of being</title>
@@ -73,47 +18,134 @@
 	</div>
       </div>
     </div>
-    <div style="margin-top:17px;margin-left:auto;margin-right:auto;width:70%;text-align:center;" >
-      <p class="lead" style="font-size:30px;text-align:center;">Enhancing your life through facilitation and training</p>
-    </div>
-    <div style="margin-left:auto;margin-right:auto;width:70%;height:30%;" >
-      <table style="table-layout:fixed;width:100%;">
-	<tr>
-	  <td>
-	    <img src="img/discover.png" class="discoverbtn" style="cursor:pointer;" onClick="onClickDiscover()"/>
-	  </td>
-	  <td>
-	    <img src="img/plan.png" class="planbtn" style="cursor:pointer;" onClick="onClickPlan()"/>
-	  </td>
-	  <td>
-	    <img src="img/act.png" class="actbtn"  style="cursor:pointer;" onClick="onClickAct()"/>
-	  </td>
-	  <td>
-	    <img src="img/measure.png" class="measurebtn" style="cursor:pointer;" onClick="onClickMeasure()"/>
-	  </td>
-	</tr>
-      </table>
-    </div>
-    <div style="height:250px;">
-	<div class="openingscreen" style="margin-left:auto;margin-right:auto;backgrd-color:#875a91;height:100%;width:70%;text-align:center;">
-	  <p class="lead">Click the squares to learn more about our breakthrough methodology</p>
-	</div>
-	<div class="discover" style="margin-left:auto;margin-right:auto;backgrd-color:#875a91;height:100%;width:70%">
-	  <h1>Discover</h1>
-	  <p class="lead">An authentic look at your life where you will identify aspects of your life that are important to you</p>
-	</div>
-	<div class="plan" style="margin-left:auto;margin-right:auto;backgrd-color:#e5331b;height:100%;width:70%;">
-	  <h1>Plan</h1>
-	  <p class="lead">A weekly call to plan out how we will impact those areas of life identified in <em>Discovery</em>.</p>
-	</div>
-	<div class="act" style="margin-left:auto;margin-right:auto;backgrd-color:#6da747;height:100%;width:70%;">
-	  <h1>Act</h1>
-	  <p class="lead">As your conscious calendar, we will remind you of your commitments and handle things that you dont need to be personally present for.Every step of the way we will be there <b style="font-size:30px;">in person</b> to provide support any time of the day.</p>
-	</div>
-	<div class="measure" style="margin-left:auto;margin-right:auto;backgrd-color:#48a2e8;height:100%;width:70%;">
-	  <h1>Measure</h1>
-	  <p class="lead">We will measure the progress of your various projects and suggest course correction whenever necessary</p>
-	</div>
+    <div style="width:70%;text-align:left;">
+      <form action="php/getsurvey.php">
+	<legend>Your Occupation</legend>
+	<input type="radio" name="q1" value="a1">Housewife</input><br>
+	<input type="radio" name="q1" value="a1">employed in a company or corporation</input><br>
+	<input type="radio" name="q1" value="a1">self employed</input><br>
+      </form>
+      2. Your monthly Family income
+     below 50K per month
+     50K - 1lakh per month
+     1lakh - 2lakh per month
+     2lakh -3lakh per month
+     3lakh - 4lakh per month
+     4lakh - 5lakh per month
+     5 lakhs - 10 lakhs per month
+     greater than 10 lakhs per month
+
+3. You reside in Bangalore
+     Yes
+     No
+
+4. paying my bills and premiums on time are a great inconvenience
+     strongly disagree
+     mostly disagree
+     slightly disagree
+     slightly agree 
+     mostly agree
+     strongly agree
+
+5. household chores like groceries, laundry, banking etc are a great inconvenience
+     strongly disagree
+     mostly disagree
+     slightly disagree
+     slightly agree 
+     mostly agree
+     strongly agree
+
+6. On average how much time are you busy in a day?
+     less than 1hr
+     1hr - 5hr
+     5hr - 8hrs
+     8hrs - 14hrs
+     more than 14hrs
+
+7. How much of your time is spent in household chores (groceries, laundry, banking etc..) per week?
+     less than 2 hrs
+     2hrs - 4hrs
+     4hrs - 6 hrs
+     6hrs - 8 hrs
+     8hrs - 10 hrs
+     above 80%
+
+8. If I had more time I would do (pick top 5)
+     work related learning 
+     hobbies
+     travelling
+     spending time with family
+     exercise
+     relaxing (Time pass).
+     work on a business Idea
+     religious activities
+     financial planning
+     stock market
+     spending time with friends
+     networking
+     shopping
+     Touching up the house
+     alternate source of income
+     self development
+     research
+     more work
+     social work or volunteering
+     other 1
+     other 2
+     other 3
+     other 4
+     other 5
+     
+     
+9. There are aspects of my life or dreams that are important to me that I do not get time to work on.
+     strongly disagree
+     mostly disagree
+     slightly disagree
+     slightly agree 
+     mostly agree
+     strongly agree
+
+10. Hiring a personal assistant, to organize and do the chores and other tasks where I am personally not required, appeals to me.
+     strongly disagree
+     mostly disagree
+     slightly disagree
+     slightly agree 
+     mostly agree
+     strongly agree
+
+11. Hiring a personal assistant to enhance my life appeals to me
+     strongly disagree
+     mostly disagree
+     slightly disagree
+     slightly agree 
+     mostly agree
+     strongly agree
+
+12. what should a personal assistant do? (choose top 5)
+     do the chores and tasks that do not require my personal presence
+     remind me about my personal commitments
+     work with me and facilitate me to fulfill on my personal goals     
+     be available in times of emergency
+     monitor my time usage in a day and suggest ways to get me more time
+     do research work on things that are important to me, such as best prices of goods, vacation ideas, etc.
+     help me be in touch with my friends and network
+     event management such as parties and get-togethers.
+     motivate me to accomplish my goals
+     other 1
+     other 2
+     other 3
+     other 4
+     other 5
+
+13. I would pay a personal assistant
+     less than 1000Rs per month
+     1000 Rs - 2000Rs per month
+     2000 Rs - 3000Rs per month
+     3000 Rs - 4000Rs per month
+     4000 Rs - 5000Rs per month
+     more than 5000Rs per month
+
+      </form>
     </div>
     <div style="text-align:center;">
       <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.html">take us for a spin</a> ?</strong>
