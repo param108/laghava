@@ -3,12 +3,11 @@
   <head>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<script>
+    <script>
     var d = document;
     var safari = (navigator.userAgent.toLowerCase().indexOf('safari') != -1) ? true : false;
     var gebtn = function(parEl,child) { return parEl.getElementsByTagName(child); };
     onload = function() {
-        
         var body = gebtn(d,'body')[0];
         body.className = body.className && body.className != '' ? body.className + ' has-js' : 'has-js';
         
@@ -53,8 +52,8 @@
             this.className = 'label_radio r_off';
             if (safari) inp.click();
         };
-    };
-</script>
+    }
+    </script>
 
     <title>lAghavA:lightness of being</title>
     <!-- Bootstrap -->
@@ -62,65 +61,27 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
-    <div style="background-image:url('img/titlebg.png');background-repeat:repeat-x;">
-      <div style="margin-left:auto;margin-right:auto;width:70%;height:50px">
+    <div style="background-image:url('img/titlebg.png');width:100%;height:100%;position:absolute;"></div>
+    <div style="background-image:url('img/titlebg.png');background-repeat:repeat-x;display:block;position:absolute;width:100%;height:10%;">
+      <div style="margin:auto;margin-left:auto;margin-right:auto;width:70%;height:10%">
 	<div style="height:100%;">
 	  <b style="line-height:50px;font-size:30px;height:100%;"><a style="color:black;" href="index.html">lAghavA:</a></b><i style="font-size:20px;">lightness of Being</i>
 	</div>
       </div>
     </div>
-    <div style="width:70%;text-align:left;">
-<div id="sizer">
-    <form action="#" method="get" accept-charset="utf-8">
-        <fieldset class="checkboxes">
-            <label class="label_check" for="checkbox-01"><input name="sample-checkbox-01" id="checkbox-01" value="1" type="checkbox" checked /> I agree to the terms &#38; conditions.</label>
-            <label class="label_check" for="checkbox-02"><input name="sample-checkbox-02" id="checkbox-02" value="1" type="checkbox" /> Please send me regular updates.</label>
-        </fieldset>
-	<br>
-        <fieldset class="radios">
-	<h3>Your Occupation<h3>
+    <div style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;position:absolute;top:30%;left:15%;">
+      <div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+	<form action="#" method="get" accept-charset="utf-8">
+          <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
+	    <h3>Your Occupation</h3>
             <label class="label_radio" for="radio-01"><input name="sample-radio" id="radio-01" value="1" type="radio" checked /> HomeMaker </label>
             <label class="label_radio" for="radio-02"><input name="sample-radio" id="radio-02" value="2" type="radio" /> employed in a company or corporation </label>
             <label class="label_radio" for="radio-03"><input name="sample-radio" id="radio-03" value="3" type="radio" /> self employed </label>
-        </fieldset>
-	<br>
-        <fieldset class="radios">
-	<h3>Your monthly family income</h3>
-            <label class="label_radio" for="radio1-01"><input name="sample-radio1" id="radio1-01" value="1" type="radio" checked /> HomeMaker </label>
-            <label class="label_radio" for="radio1-02"><input name="sample-radio1" id="radio1-02" value="2" type="radio" /> employed in a company or corporation </label>
-            <label class="label_radio" for="radio1-03"><input name="sample-radio1" id="radio1-03" value="3" type="radio" /> self employed </label>
-        </fieldset>
-
-    </form>
-	</div>	
-      <form action="php/getsurvey.php">
-	<table style="text-align:left;vertical-align:middle;" border="1">
-	  <tr>
-	    <td>
-	      <input style="vertical-align:middle;" type="radio" name="q1" value="a1"/>
-	    </td>
-	    <td>
-	      Housewife
-	    </td>
-	  </tr>
-	  <tr>
-	    <td>
-	      <input type="radio" name="q1" value="a1"/>
-	    </td>
-	    <td>
-	      employed in a company or corporation
-	    </td>
-	  </tr>
-	  <tr>
-	    <td>
-	      <input type="radio" name="q1" value="a1"/>
-	    </td>
-	    <td>
-	      self employed
-	    </td>
-	  </tr>
-	</table>
-      </form>
+            <label class="label_radio" for="radio-04"><input name="sample-radio" id="radio-04" value="3" type="radio" /> unemployed </label>
+          </fieldset>
+	</form>
+      </div>	
+    </div>
       2. Your monthly Family income
      below 50K per month
      50K - 1lakh per month
@@ -241,9 +202,7 @@
      4000 Rs - 5000Rs per month
      more than 5000Rs per month
 
-      </form>
-    </div>
-    <div style="text-align:center;">
+    <div style="width:100%;position:absolute;top:90%;text-align:center;">
       <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.html">take us for a spin</a> ?</strong>
     </div>
   </body>

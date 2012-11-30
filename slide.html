@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script>
+      function oneclick() {
+      $(this).hide("slide", { direction: "right" }, 1000);
+      $(this).unbind("click");
+      $("#two").show();
+      };
+      $(document).ready(function() {
+      $("#two").hide();
+      $("#one").click(oneclick);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="one" style="background-color:#00ff00;height:600px;width:70%;">
+      ONE
+    </div>
+    <div id="two" style="background-color:#ff0000;height:600px;width:70%;">
+      TWO
+    </div>
+  </body>
+</html>

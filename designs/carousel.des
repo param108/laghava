@@ -1,0 +1,16 @@
+
+Behaviour
+1. Radio buttons when clicked cause a movement to the next question
+2. checkboxes have a next button
+3. last submit button submits
+
+{
+	qn:string;
+	type:checkbox|radios;
+	limit:number to allow ticked<valid only for checkbox>;
+	ans:array {
+		  { type:input|output; 
+		    str:<valid for output only>;
+		    value:<gets returned>;}[]
+	}
+}[]
