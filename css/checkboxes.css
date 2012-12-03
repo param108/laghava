@@ -4,7 +4,7 @@ html        { font: 14px/18px 'HelveticaNeue-Light', 'Helvetica Neue', Arial, He
 a:hover, a:active { outline: none; }
 #sizer      { width: 340px; margin: 0 auto; padding: 144px 200px 240px; background: url(highlight.png) no-repeat 50% 0; }
 #fieldset        { padding-left: 5px; width: 50%; padding: 18px 20px 0; margin-bottom: 18px; background: #4f84b8 url(box-grad.png) repeat-x 0 0; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); }
-fieldset        { padding-left: 5px; padding: 18px 20px 0; margin-bottom: 18px; background: #4f84b8 url(box-grad.png) repeat-x 0 0; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); }
+fieldset        { color: azure;padding-left: 5px; padding: 18px 20px 0; margin-bottom: 18px; background: #245982; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); }
 #.largeqn { width:90% }
 #fieldset    { border: 0; padding-bottom: 9px; }
 label       { display: block; cursor: pointer; line-height: 20px; padding-bottom: 9px; text-shadow: 0 -1px 0 rgba(0,0,0,.2); }
