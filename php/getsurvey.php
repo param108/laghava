@@ -33,7 +33,7 @@ if (!$link) {
         redirect_to_home();
 }
 mysql_select_db("laghuserdata",$link);
-$query = "insert into surveydata values ('$surveyname'"
+$query = "insert into surveydata values ('$surveyname'";
 foreach($out as $val) {
     $query = $query.",'$val'";
 }
