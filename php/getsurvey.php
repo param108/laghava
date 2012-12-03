@@ -41,5 +41,5 @@ $query = $query.");";
 mysql_query("$query",$link);
 mysql_close($link);
 
-redirect_to_success();
+redirect_to_home();
 
