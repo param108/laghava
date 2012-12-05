@@ -13,10 +13,28 @@
       $(".planbtn").hide();
       }
 
+      function resizepic() {
+      width=$("#titlestrip").width();
+      height=$(window).height()*0.8;
+      if ((height < 640) || (width < 1200)) {
+		   dwd = (width/1200);
+		   dht  = (height/640);
+		   $(".imgholder").each(function() {
+		       myht = 40;
+		       mywd = 300;
+		       myht = (myht*dht);
+		       mywd = (mywd*dwd);
+		       $(this).width(mywd);
+		       $(this).height(myht);
+		   });
+	}
+      }
       $(document).ready(function() {
       $(".planbtn").hide();
       $(".planbtn").click(onClickPlan);
       $(".discoverbtn").click(onClickDiscover);
+      $(window).resize(resizepic);
+      resizepic();	
       });
     </script>
     <title>lAghavA:lightness of being</title>
@@ -26,7 +44,7 @@
   <body>
     <div style="background-image:url('img/titlebg.png');background-repeat:repeat-x;">
       <div style="margin-left:auto;margin-right:auto;width:70%;height:50px">
-	<div style="height:100%;">
+	<div id="titlestrip" style="height:100%;">
 	  <b style="line-height:50px;font-size:30px;height:100%;"><a style="color:black;" href="index.html">lAghavA:</a></b><i style="color:azure;font-size:20px;">lightness of Being</i>
 	</div>
       </div>
@@ -38,96 +56,460 @@
 <table border="0" cellpadding="0">
 <tr>
 <td>
-<img src="img/todolist/todolist0x0.png"/>
+<img class="imgholder" src="img/todolist/todolist0x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/todolist/todolist300x0.png"/>
+<img class="imgholder" src="img/todolist/todolist300x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/todolist/todolist600x0.png"/>
+<img class="imgholder" src="img/todolist/todolist600x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/todolist/todolist900x0.png"/>
-</td>
-</tr>
-<tr>
-<td>
-<img src="img/todolist/todolist0x300.png"/>
-</td>
-<td>
-<img src="img/todolist/todolist300x300.png"/>
-</td>
-<td>
-<img src="img/todolist/todolist600x300.png"/>
-</td>
-<td>
-<img src="img/todolist/todolist900x300.png"/>
+<img class="imgholder" src="img/todolist/todolist900x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 </tr>
 <tr>
 <td>
-<img src="img/todolist/todolist0x600.png"/>
+<img class="imgholder" src="img/todolist/todolist0x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/todolist/todolist300x600.png"/>
+<img class="imgholder" src="img/todolist/todolist300x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/todolist/todolist600x600.png"/>
+<img class="imgholder" src="img/todolist/todolist600x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/todolist/todolist900x600.png"/>
+<img class="imgholder" src="img/todolist/todolist900x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/todolist/todolist0x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist300x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist600x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/todolist/todolist900x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 </tr>
 </table>
-    <!-- <img src="img/todolist.png" height="600px" width="1600px" class="discoverbtn" style="cursor:pointer;width:1600px;height:640px;" onClick="onClickDiscover()"/> -->
+    <!-- <img class="imgholder" src="img/todolist.png" height="600px" width="1600px" class="discoverbtn" style="cursor:pointer;cursor:pointer;width:1600px;height:640px;" onClick="onClickDiscover()"/> -->
     </div>
-    <div class= "planbtn" style="margin-left:auto;margin-right:auto;width:70%;max-height:60%;" >
+    <div class= "planbtn" style="cursor:pointer;margin-left:auto;margin-right:auto;width:70%;max-height:60%;" >
 
 <table border="0" cellpadding="0">
 <tr>
 <td>
-<img src="img/leffect/leffect0x0.png"/>
+<img class="imgholder" src="img/leffect/leffect0x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/leffect/leffect300x0.png"/>
+<img class="imgholder" src="img/leffect/leffect300x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/leffect/leffect600x0.png"/>
+<img class="imgholder" src="img/leffect/leffect600x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/leffect/leffect900x0.png"/>
-</td>
-</tr>
-<tr>
-<td>
-<img src="img/leffect/leffect0x300.png"/>
-</td>
-<td>
-<img src="img/leffect/leffect300x300.png"/>
-</td>
-<td>
-<img src="img/leffect/leffect600x300.png"/>
-</td>
-<td>
-<img src="img/leffect/leffect900x300.png"/>
+<img class="imgholder" src="img/leffect/leffect900x0.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 </tr>
 <tr>
 <td>
-<img src="img/leffect/leffect0x600.png"/>
+<img class="imgholder" src="img/leffect/leffect0x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/leffect/leffect300x600.png"/>
+<img class="imgholder" src="img/leffect/leffect300x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/leffect/leffect600x600.png"/>
+<img class="imgholder" src="img/leffect/leffect600x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 <td>
-<img src="img/leffect/leffect900x600.png"/>
+<img class="imgholder" src="img/leffect/leffect900x40.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x80.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x120.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x160.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x200.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x240.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x280.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x320.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x360.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x400.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x440.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x480.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x520.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x560.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+</tr>
+<tr>
+<td>
+<img class="imgholder" src="img/leffect/leffect0x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect300x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect600x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
+</td>
+<td>
+<img class="imgholder" src="img/leffect/leffect900x600.png" height="40px" width="300px" style="cursor:pointer;height:40px;width:300px;" />
 </td>
 </tr>
 </table>
-<!--    <img src="img/leffect.png" height="600px" width="1200px" class="planbtn" style="cursor:pointer;width:1200px;height:640px;" onClick="onClickPlan()"/> -->
+<!--    <img src="img/leffect.png" height="600px" width="1200px" class="planbtn" style="cursor:pointer;cursor:pointer;width:1200px;height:640px;" onClick="onClickPlan()"/> -->
     </div>
     <div style="text-align:center;">
       <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.html">take us for a spin</a> ?</strong>

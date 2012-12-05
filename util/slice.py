@@ -9,22 +9,21 @@ im = Image.open(filename)
 prefix = filename.split(".")[0]
 width = im.size[0]
 height = im.size[1]
-step = 300
-print "<table>"
-for y in range(0,height,step):
+stepx = 300
+stepy = 40
+print '<table border="0" cellpadding="0">'
+for y in range(0,height,stepy):
 	print "<tr>"
-	for x in range(0,width,step):
-		stepx = step
-		stepy = step
-		if (x + step) > width:
+	for x in range(0,width,stepx):
+		if (x + stepx) > width:
 			stepx = width - x 
-		if (y + step) > height:
+		if (y + stepy) > height:
 			stepy = height - y
 		print "<td>"
 		im2=im.crop([x,y,x+stepx,y+stepy])
 		imagename = dirname+"/"+prefix+str(x)+"x"+str(y)+".png";
 		imageurl = "img/"+imagename
-		print '<img src="'+imageurl+'"/>'
+		print '<img class="imgholder" src="'+imageurl+'" height="'+str(stepy)+'px" width="'+str(stepx)+'px" style="cursor:pointer;height:'+str(stepy)+'px;width:'+str(stepx)+'px;" />'
 		im2.save(dirname+"/"+prefix+str(x)+"x"+str(y)+".png");
 		print "</td>"
 	print "</tr>"
