@@ -10,7 +10,7 @@ prefix = filename.split(".")[0]
 width = im.size[0]
 height = im.size[1]
 stepx = 300
-stepy = 40
+stepy = 160
 print '<table border="0" cellpadding="0">'
 for y in range(0,height,stepy):
 	print "<tr>"
