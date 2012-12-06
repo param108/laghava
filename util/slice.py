@@ -11,7 +11,7 @@ width = im.size[0]
 height = im.size[1]
 stepx = 300
 stepy = 160
-print '<table border="0" cellpadding="0">'
+print '<table border="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">'
 for y in range(0,height,stepy):
 	print "<tr>"
 	for x in range(0,width,stepx):
