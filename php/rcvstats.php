@@ -1,5 +1,8 @@
 <?php
-include_once("php/stats.php");
+include_once("spider.php");
+include_once("stats.php");
+if (!check_if_spider()) {
+session_start();
 stats_update_event($_POST["event"],
 		   $_POST["c1"],
 		   $_POST["c2"],
@@ -11,5 +14,6 @@ stats_update_event($_POST["event"],
 		   $_POST["d3"],
 		   $_POST["d4"],
 		   $_POST["d5"]);
+}
 ?>
 <html>ok</html>

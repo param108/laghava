@@ -13,7 +13,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/laghstats.js"></script>
     <script>
+
+      var first_time = true;
       function onClickDiscover() {
+	if (first_time) {
+	    first_time = false;
+           lagh_register_event("LOAD_CLICKED");	
+	}
       $(".discoverbtn").hide();
       $(".planbtn").show();
       }
@@ -50,16 +56,16 @@
       }
       var imagesloaded=0;
       function onloadimage() {
-	imagesloaded++;
-	if (imagesloaded == 18) {
-            lagh_register_event("LOAD_COMPLETE");
-	}
+	    imagesloaded++;
+	    if (imagesloaded == 18) {
+                lagh_register_event("LOAD_ALL_COMPLETE");
+	    }
       }
       $(document).ready(function() {
       $(".planbtn").hide();
       $(".planbtn").click(onClickPlan);
       $(".discoverbtn").click(onClickDiscover);
-      $("imgloader").load(onloadimage);
+      $(".imgholder").load(onloadimage);
       $(window).resize(resizepic);
       resizepic();	
       lagh_register_event("LOAD_READY");
