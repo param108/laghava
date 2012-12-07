@@ -1,11 +1,11 @@
 <?php
 include_once("dbconfig.php");
 function redirect_to_home() {
-	header( 'Location: http://www.laghava.com/index.html');
+	header( 'Location: ../index.html');
 	exit();
 }
 function redirect_to_success() {
-	header( 'Location: http://www.laghava.com/addedNewUser.html');
+	header( 'Location: ../addedNewUser.html');
 	exit();
 }
 /**

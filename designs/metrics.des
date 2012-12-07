@@ -7,4 +7,33 @@ design
 ======
 ajax calls
 database
+	timestamp sessionid event useragent 5 numbers 5 strings o
 
+todo
+1. create table [done]
+2. convert all html files to php
+3. add session_start to all 
+4. end of each page push one event
+5. ajax call to push any other events
+6. 
+
+
+if ( ! function_exists('check_if_spider'))
+{
+	function check_if_spider()
+	{
+		// Add as many spiders you want in this array
+		$spiders = array('Googlebot', 'Yammybot', 'Openbot', 'Yahoo', 'Slurp', 'msnbot', 'ia_archiver', 'Lycos', 'Scooter', 'AltaVista', 'Teoma', 'Gigabot', 'Googlebot-Mobile');
+		
+		// Loop through each spider and check if it appears in
+		// the User Agent
+		foreach ($spiders as $spider)
+		{
+			if (eregi($spider, $_SERVER['HTTP_USER_AGENT']))
+			{
+				return TRUE;
+			}
+		}
+		return FALSE;
+	}
+}

@@ -1,0 +1,15 @@
+<?php
+include_once("php/stats.php");
+stats_update_event($_POST["event"],
+		   $_POST["c1"],
+		   $_POST["c2"],
+		   $_POST["c3"],
+		   $_POST["c4"],
+		   $_POST["c5"],
+		   $_POST["d1"],
+		   $_POST["d2"],
+		   $_POST["d3"],
+		   $_POST["d4"],
+		   $_POST["d5"]);
+?>
+<html>ok</html>
