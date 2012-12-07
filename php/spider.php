@@ -13,7 +13,7 @@
 		    // the User Agent
 		    foreach ($spiders as $spider)
 		    {
-			if (eregi($spider, $_SERVER['HTTP_USER_AGENT']))
+			if (preg_match("/$spider/", $_SERVER['HTTP_USER_AGENT']))
 			{
 				$is_spider = true;
 				return TRUE;
