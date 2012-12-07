@@ -1,7 +1,7 @@
 <?php
 include_once("dbconfig.php");
 function redirect_to_home() {
-	header( 'Location: ../index.html');
+	header( 'Location: ../index.php');
 	exit();
 }
 function redirect_to_success() {
