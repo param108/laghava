@@ -1,0 +1,118 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: 182.50.131.191
+-- Generation Time: Dec 07, 2012 at 01:28 AM
+-- Server version: 5.0.92
+-- PHP Version: 5.3.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+USE laghuserdata;
+--
+-- Database: `laghuserdata`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `interestedUsers`
+--
+
+CREATE TABLE `interestedUsers` (
+  `interestedUser` varchar(100) NOT NULL,
+  UNIQUE KEY `interestedUser` (`interestedUser`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Interested Users';
+
+--
+-- Dumping data for table `interestedUsers`
+--
+
+INSERT INTO `interestedUsers` VALUES('param.ponnaiyan@gmail.com');
+INSERT INTO `interestedUsers` VALUES('paramp@cisco.com');
+INSERT INTO `interestedUsers` VALUES('paramp@yahoo.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `surveydata`
+--
+
+CREATE TABLE `surveydata` (
+  `name` varchar(50) NOT NULL,
+  `q1` tinyint(4) NOT NULL,
+  `q2` tinyint(4) NOT NULL,
+  `q3` tinyint(4) NOT NULL,
+  `q4` tinyint(4) NOT NULL,
+  `q5` tinyint(4) NOT NULL,
+  `q6` tinyint(4) NOT NULL,
+  `q7` tinyint(4) NOT NULL,
+  `q8` tinyint(4) NOT NULL,
+  `q9` tinyint(4) NOT NULL,
+  `q10` tinyint(4) NOT NULL,
+  `q11` tinyint(4) NOT NULL,
+  `q12` tinyint(4) NOT NULL,
+  `q13` tinyint(4) NOT NULL,
+  `q14` tinyint(4) NOT NULL,
+  `q15` tinyint(4) NOT NULL,
+  `q16` tinyint(4) NOT NULL,
+  `q17` tinyint(4) NOT NULL,
+  `q18` tinyint(4) NOT NULL,
+  `q19` tinyint(4) NOT NULL,
+  `q20` tinyint(4) NOT NULL,
+  `q21` tinyint(4) NOT NULL,
+  `q22` tinyint(4) NOT NULL,
+  `q23` tinyint(4) NOT NULL,
+  `q24` tinyint(4) NOT NULL,
+  `q25` tinyint(4) NOT NULL,
+  `q26` tinyint(4) NOT NULL,
+  `q27` tinyint(4) NOT NULL,
+  `q28` tinyint(4) NOT NULL,
+  `q29` tinyint(4) NOT NULL,
+  `q30` tinyint(4) NOT NULL,
+  `q31` tinyint(4) NOT NULL,
+  `q32` tinyint(4) NOT NULL,
+  `q33` tinyint(4) NOT NULL,
+  `q34` tinyint(4) NOT NULL,
+  `q35` tinyint(4) NOT NULL,
+  `q36` tinyint(4) NOT NULL,
+  `q37` tinyint(4) NOT NULL,
+  `q38` tinyint(4) NOT NULL,
+  `q39` tinyint(4) NOT NULL,
+  KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='survey results';
+
+--
+-- Dumping data for table `surveydata`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userevents`
+--
+
+CREATE TABLE `userevents` (
+  `timestamp` datetime NOT NULL,
+  `sessionid` varchar(40) NOT NULL,
+  `event` varchar(50) NOT NULL,
+  `useragent` varchar(50) NOT NULL,
+  `c1` varchar(50) NOT NULL,
+  `c2` varchar(50) NOT NULL,
+  `c3` varchar(50) NOT NULL,
+  `c4` varchar(50) NOT NULL,
+  `c5` varchar(50) NOT NULL,
+  `d1` int(11) NOT NULL,
+  `d2` int(11) NOT NULL,
+  `d3` int(11) NOT NULL,
+  `d4` int(11) NOT NULL,
+  `d5` int(11) NOT NULL,
+  KEY `sessionid` (`sessionid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='to get stats';
+
+--
+-- Dumping data for table `userevents`
+--
+
+
