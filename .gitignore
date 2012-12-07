@@ -6,4 +6,4 @@ gdform.php
 php.ini
 stats
 webformmailer.php
-dbconfig.php
+php/dbconfig.php
