@@ -1,3 +1,11 @@
+<?php
+	include_once("php/spider.php");
+	include_once("php/stats.php");
+	if (!check_if_spider()) {
+		session_start();
+		stats_update_event("HIT_SURVEY_ENTRY");
+	}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -24,13 +32,13 @@
       <span class="needbgnd" style="display:inline-block;">
       <p class="lead" style="font-size:25px">Are you a resident of Bangalore?</p>
 	<p style="text-align:left;list-style-type:none;width:100%;">
-	  <a  class="btn input-block-level btn-primary" href="surveycontinue.html"><strong>Yes</strong>, I reside in Bangalore</a><br>
-	  <a  class="btn input-block-level btn-primary" href="SurveyNotNow.html"><strong>No</strong>, I dont reside in Bangalore</a>
+	  <a  class="btn input-block-level btn-primary" href="surveycontinue.php"><strong>Yes</strong>, I reside in Bangalore</a><br>
+	  <a  class="btn input-block-level btn-primary" href="SurveyNotNow.php"><strong>No</strong>, I dont reside in Bangalore</a>
 	</p>
       </span>
     </div>    
     <div style="width:100%;position:absolute;top:90%;text-align:center;z-index:-1;">
-      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.html">take us for a spin</a> ?</strong>
+      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.php">take us for a spin</a> ?</strong>
     </div>
   </div>
   </body>

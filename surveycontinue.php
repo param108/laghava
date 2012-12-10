@@ -1,8 +1,17 @@
+<?php
+	include_once("php/spider.php");
+	include_once("php/stats.php");
+	if (!check_if_spider()) {
+		session_start();
+		stats_update_event("HIT_SURVEY_CONTINUE");
+	}
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <script src="js/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/laghstats.js"></script>
     <script>
     var d = document;
     var safari = (navigator.userAgent.toLowerCase().indexOf('safari') != -1) ? true : false;
@@ -78,6 +87,7 @@
 		    $("#radio"+(qn)).hide();
 		    qn = qn + 1;
 		    if (qn == 12) {
+			lagh_register_event("SURVEY_COMPLETE");
 			$("#sbmtbtn").click();
 		    } else {
 		    if (type[qn] == "radio") {
@@ -280,7 +290,7 @@
 </div>
 </form>
     <div style="width:100%;position:absolute;top:90%;text-align:center;z-index:-1;">
-      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.html">take us for a spin</a> ?</strong>
+      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.php">take us for a spin</a> ?</strong>
     </div>
   </div>
   </body>

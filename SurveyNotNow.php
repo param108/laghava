@@ -1,3 +1,11 @@
+<?php
+	include_once("php/spider.php");
+	include_once("php/stats.php");
+	if (!check_if_spider()) {
+		session_start();
+		stats_update_event("HIT_SURVEY_NOTNOW");
+	}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -16,7 +24,7 @@
     </div>
     <div style="margin-left:auto;margin-right:auto;width:70%;margin-top:12%;text-align:center;">
       <p class="lead" style="font-size:25px">
-	Thank You for giving us your time to try out the survey! Unfortunately, this survey is for Bangalore residents only as we will be beginning operations there. If you would like to get information regarding <a class="btn btn-primary" href="index.php"><strong>Laghava.com</strong></a> by email please submit your email address via <a class="btn btn-primary" href="willcall.html">this link</a> and we can keep you updated when we reach your city.
+	Thank You for giving us your time to try out the survey! Unfortunately, this survey is for Bangalore residents only as we will be beginning operations there. If you would like to get information regarding <a class="btn btn-primary" href="index.php"><strong>Laghava.com</strong></a> by email please submit your email address via <a class="btn btn-primary" href="willcall.php">this link</a> and we can keep you updated when we reach your city.
       </p>
       <p class="lead" style="font-size:25px">
 	Thank you once again!

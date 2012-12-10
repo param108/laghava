@@ -1,7 +1,14 @@
 <?php
 include_once("dbconfig.php");
+include_once("spider.php");
+include_once("stats.php");
+if (!check_if_spider()) {
+	session_start();
+	stats_update_event("HIT_GETSURVEY");
+}
+
 function redirect_to_home() {
-        header( 'Location: ../SurveyThankYou.html');
+        header( 'Location: ../SurveyThankYou.php');
         exit();
 }
 # get db config, survey config and dump

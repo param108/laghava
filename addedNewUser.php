@@ -1,3 +1,11 @@
+<?php
+	include_once("php/spider.php");
+	include_once("php/stats.php");
+	if (!check_if_spider()) {
+		session_start();
+		stats_update_event("HIT_ADDEDNEWUSER");
+	}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,7 +27,7 @@
 	Thank You! We will get back to you shortly
       </p>
       <p class="lead" style="font-size:25px">
-	<a href="survey.html">Please fill in a small survey which will help you understand more about what we do and also gives us valuable data on how we can serve you better.</a>
+	<a href="survey.php">Please fill in a small survey which will help you understand more about what we do and also gives us valuable data on how we can serve you better.</a>
       </p>      
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>

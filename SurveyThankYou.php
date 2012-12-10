@@ -1,3 +1,11 @@
+<?php
+	include_once("php/spider.php");
+	include_once("php/stats.php");
+	if (!check_if_spider()) {
+		session_start();
+		stats_update_event("HIT_SURVEYTHANKYOU");
+	}
+?>
 <!DOCTYPE html>
 <html>
   <head>

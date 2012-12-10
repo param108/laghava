@@ -1,11 +1,18 @@
 <?php
 include_once("dbconfig.php");
+include_once("spider.php");
+include_once("stats.php");
+if (!check_if_spider()) {
+	session_start();
+	stats_update_event("HIT_ADDNEWINTEREST");
+}
+
 function redirect_to_home() {
 	header( 'Location: ../index.php');
 	exit();
 }
 function redirect_to_success() {
-	header( 'Location: ../addedNewUser.html');
+	header( 'Location: ../addedNewUser.php');
 	exit();
 }
 /**

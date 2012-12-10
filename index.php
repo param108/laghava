@@ -86,7 +86,7 @@
     </div>
     <div class="menubar" link="azure" alink="azure" vlink="khaki" style="margin-top:-1px;margin-left:auto;margin-right:auto;width:70%;text-align:right;" >
     <div style="display:inline-block;padding-bottom:5px;padding-top:5px;padding-left:5px;padding-right:5px;margin-top:0;margin-left:2px;margin-right:2px;background:#245982;color:azure"><a class="menubarlink" href="methodology.html"><b>Methodology</b></a></div>
-    <div style="display:inline-block;padding-top:5px;padding-right:5px;padding-left:5px;padding-bottom:5px;margin-left:2px;margin-right:2px;background:#245982;color:azure"><a class="menubarlink" href="survey.html"><b>Survey</b></a></div>
+    <div style="display:inline-block;padding-top:5px;padding-right:5px;padding-left:5px;padding-bottom:5px;margin-left:2px;margin-right:2px;background:#245982;color:azure"><a class="menubarlink" href="survey.php"><b>Survey</b></a></div>
     </div>
     <div style="margin-top:5px;margin-left:auto;margin-right:auto;width:70%;text-align:center;" >
     </div>
@@ -168,8 +168,8 @@
 <!--    <img src="img/leffect.png" height="600px" width="1200px" class="planbtn" style="cursor:pointer;cursor:pointer;width:1200px;height:640px;" onClick="onClickPlan()"/> -->
     </div>
     <div style="text-align:center;">
-      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.html">take us for a spin</a> ?</strong><br>
-	<b>[</b><a href="methodology.html">Methodology</a><b>].[</b><a href="survey.html">Survey</a><b>]</b>
+      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.php">take us for a spin</a> ?</strong><br>
+	<b>[</b><a href="methodology.html">Methodology</a><b>].[</b><a href="survey.php">Survey</a><b>]</b>
     </div>
   </body>
 </html>
