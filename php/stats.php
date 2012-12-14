@@ -5,6 +5,7 @@ include_once("dbconfig.php");
 function stats_update_event($event, $c1="",$c2="",$c3="",$c4="",$c5="",
 			   	$d1=0, $d2=0, $d3=0, $d4=0, $d5=0)
 {
+if (defined('STATS_ENABLE') && STATS_ENABLE == true) {
 $link = mysql_connect(DBHOST,DBUSER,DBPASS);
 if (!$link) {
         error_log("Could not connect to mysql");
@@ -17,4 +18,5 @@ if (!$result) {
     die();
 }
 mysql_close($link);
+}
 }

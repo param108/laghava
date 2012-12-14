@@ -1,4 +1,5 @@
 <?php
+	include_once("php/mobileCheck.php");
 	include_once("php/spider.php");
 	include_once("php/stats.php");
 	if (!check_if_spider()) {
@@ -17,6 +18,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   <body>
+<?php
+	if ($md->isMobile()) {
+		print('<div style="color:khaki;background-color:#245982;width:100%;line-height:50px">Do you want the mobile version?<br>\
+	  <a  class="btn input-block-level btn-primary" href="surveycontinue.php"><strong>Yes</strong> switch to mobile version</a><br>\
+	  <a  class="btn input-block-level btn-primary" href="SurveyNotNow.php"><strong>No</strong>Do not switch</a>\
+	</div>');
+	}
+?>
     <div style="background-image:url('img/design.png');width:100%;height:100%;position:fixed;z-index:-1;overflow:scroll;">
     <div style="color:azure; background-image:url('img/titlebg.png');background-repeat:repeat-x;display:block;width:100%;height:10%;top:0;">
       <div style="margin:auto;margin-left:auto;margin-right:auto;width:70%;height:10%">
