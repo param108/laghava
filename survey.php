@@ -12,6 +12,11 @@
   <head>
     <script src="js/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+	function hideMobileCheck(){
+		$(".mobilecheck").hide();
+	}
+    </script>
     <title>lAghavA:lightness of being</title>
     <!-- Bootstrap -->
     <link href="css/checkboxes.css" rel="stylesheet" media="screen">
@@ -20,9 +25,9 @@
   <body>
 <?php
 	if ($md->isMobile()) {
-		print('<div style="color:khaki;background-color:#245982;width:100%;line-height:50px">Do you want the mobile version?<br>\
-	  <a  class="btn input-block-level btn-primary" href="surveycontinue.php"><strong>Yes</strong> switch to mobile version</a><br>\
-	  <a  class="btn input-block-level btn-primary" href="SurveyNotNow.php"><strong>No</strong>Do not switch</a>\
+		print('<div class="mobilecheck" style="color:khaki;background-color:#245982;width:100%;line-height:50px;position:fixed;font-size:x-large;">Do you want the mobile version?<br>
+	  <a  class="btn input-block-level btn-primary" style="font-size:x-large;line-height:50px;" href="surveycontinue.php"><strong>Yes</strong> switch to mobile version</a><br>
+	  <span  class="btn input-block-level btn-primary" style="font-size:x-large;line-height:50px;" onClick="hideMobileCheck()"><strong>No</strong> do not switch</span>
 	</div>');
 	}
 ?>
