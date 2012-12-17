@@ -6,7 +6,7 @@
 		if ((isset($_SESSION["laghstate"]) && $_SESSION["laghstate"]!="entersurvey") || !isset($_SESSION["laghstate"])) {
 		        header( 'Location: survey.php');
 			exit();
-		};
+		}
 		$_SESSION["laghstate"] = "contsurvey";
 		stats_update_event("HIT_SURVEY_CONTINUE");
 	}
