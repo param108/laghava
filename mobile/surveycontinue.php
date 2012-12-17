@@ -87,7 +87,7 @@
 		    $("#radio"+(qn)).hide();
 		    qn = qn + 1;
 		    if (qn == 12) {
-			lagh_register_event("SURVEY_COMPLETE");
+			lagh_register_event("SURVEY_MCOMPLETE");
 			$("#sbmtbtn").click();
 		    } else {
 		    if (type[qn] == "radio") {
@@ -120,11 +120,11 @@
     <div style="color:azure; background-image:url('img/titlebg.png');background-repeat:repeat-x;display:block;width:100%;top:0;">
       <div style="padding-top:5px;padding-bottom:5px;margin-left:auto;margin-right:auto;width:70%;height:10%">
 	<div style="height:100%;">
-	  <b style="font-size:x-large;height:100%;"><a style="color:black;" href="index.php">lAghavA:</a></b><i style="color:azure;">lightness of Being</i>
+	  <b style="font-size:x-large;height:100%;"><a style="color:black;" href="http://www.laghava.com/index.php">lAghavA:</a></b><i style="color:azure;">lightness of Being</i>
 	</div>
       </div>
     </div>
-    <form id="surveyform" style="display:none;" action="php/getsurvey.php" method="post" accept-charset="utf-8">
+    <form id="surveyform" style="display:none;" action="http://www.laghava.com/php/getsurvey.php" method="post" accept-charset="utf-8">
 <div id="radio0" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
 <div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
 <br>
@@ -287,7 +287,7 @@
 </fieldset> </div> </div>
 </form>
     <div style="width:100%;text-align:center;z-index:-1;">
-      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.php">take us for a spin</a> ?</strong>
+      <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="http://www.laghava.com/willcall.php">take us for a spin</a> ?</strong>
     </div>
   </body>
 </html>

@@ -21,7 +21,7 @@
     <div style="color:azure; background-image:url('img/titlebg.png');background-repeat:repeat-x;display:block;width:100%;top:0;">
       <div style="padding-top:5px;padding-bottom:5px;margin-left:auto;margin-right:auto;width:70%;height:10%">
 	<div style="height:100%;">
-	  <b style="font-size:x-large;height:100%;"><a style="color:black;" href="index.php">lAghavA:</a></b><i style="color:azure;">lightness of Being</i>
+	  <b style="font-size:x-large;height:100%;"><a style="color:black;" href="http://www.laghava.com/index.php">lAghavA:</a></b><i style="color:azure;">lightness of Being</i>
 	</div>
       </div>
     </div>
@@ -34,12 +34,12 @@
 	<p class="lead" style="font-size:large">Are you a resident of Bangalore?</p>
 	<p style="text-align:left;list-style-type:none;width:100%;">
 	  <a  class="btn input-block-level btn-primary" style="font-size:large;" href="surveycontinue.php"><strong>Yes</strong>, I reside in Bangalore</a><br/><br/>
-	    <a  class="btn input-block-level btn-primary" style="font-size:large;" href="SurveyNotNow.php"><strong>No</strong>, I dont reside in Bangalore</a>
+	    <a  class="btn input-block-level btn-primary" style="font-size:large;" href="http://www.laghava.com/SurveyNotNow.php"><strong>No</strong>, I dont reside in Bangalore</a>
 	</p>
       </span>
     </div>    
     <div style="width:95%;text-align:center;z-index:-1;">
-      <strong style="font-size:x-large;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.php">take us for a spin</a> ?</strong>
+      <strong style="font-size:x-large;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="http://www.laghava.com/willcall.php">take us for a spin</a> ?</strong>
     </div>
   </body>
 </html>
