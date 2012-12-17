@@ -1,0 +1,7 @@
+household chores like groceries, laundry, banking etc are a great inconvenience
+ strongly disagree
+ mostly disagree
+ slightly disagree
+ slightly agree 
+ mostly agree
+ strongly agree

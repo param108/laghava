@@ -1,0 +1,6 @@
+On average how much time are you busy in a day?
+ less than 1hr
+ 1hr - 5hr
+ 5hr - 8hrs
+ 8hrs - 14hrs
+ more than 14hrs

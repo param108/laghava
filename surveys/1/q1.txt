@@ -1,0 +1,9 @@
+Your monthly Family income
+ below 50K per month
+ 50K - 1lakh per month
+ 1lakh - 2lakh per month
+ 2lakh -3lakh per month
+ 3lakh - 4lakh per month
+ 4lakh - 5lakh per month
+ 5 lakhs - 10 lakhs per month
+ greater than 10 lakhs per month

@@ -125,31 +125,33 @@
       </div>
     </div>
     <form id="surveyform" style="display:none;" action="php/getsurvey.php" method="post" accept-charset="utf-8">
-      <div id="radio0" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
-	<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
-	  <br>
-	  <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
-	    <h3>Your Occupation</h3>
-	    <label class="label_radio qn0" for="radio0001"><input name="sample-radio-0" id="radio0001" value="1" type="radio" checked /> self employed</label>
-	    <label class="label_radio qn0" for="radio0002"><input name="sample-radio-0" id="radio0002" value="2" type="radio" checked /> unemployed</label>
-	    <label class="label_radio qn0" for="radio0003"><input name="sample-radio-0" id="radio0003" value="3" type="radio" checked /> employed in a company of corporation</label>
-	    <label class="label_radio qn0" for="radio0004"><input name="sample-radio-0" id="radio0004" value="4" type="radio" checked /> Homemaker</label>
-      </fieldset> </div> </div>
-      <div id="radio1" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;max-height:50%;">
-	<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
-	  <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
-	    <h3>Your monthly Family income</h3>
-	    <label class="label_radio qn1" for="radio0101"><input name="sample-radio-1" id="radio0101" value="1" type="radio" checked /> below 50K per month</label>
-	    <label class="label_radio qn1" for="radio0102"><input name="sample-radio-1" id="radio0102" value="2" type="radio" checked /> 50K - 1lakh per month</label>
-	    <label class="label_radio qn1" for="radio0103"><input name="sample-radio-1" id="radio0103" value="3" type="radio" checked /> 1lakh - 2lakh per month</label>
-	    <label class="label_radio qn1" for="radio0104"><input name="sample-radio-1" id="radio0104" value="4" type="radio" checked /> 2lakh -3lakh per month</label>
-	    <label class="label_radio qn1" for="radio0105"><input name="sample-radio-1" id="radio0105" value="5" type="radio" checked /> 3lakh - 4lakh per month</label>
+<div id="radio0" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
+<fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
+<h3>Your Occupation</h3>
+<label class="label_radio qn0" for="radio0001"><input name="sample-radio-0" id="radio0001" value="1" type="radio" checked /> self employed</label>
+<label class="label_radio qn0" for="radio0002"><input name="sample-radio-0" id="radio0002" value="2" type="radio" checked /> unemployed</label>
+<label class="label_radio qn0" for="radio0003"><input name="sample-radio-0" id="radio0003" value="3" type="radio" checked /> employed in a company of corporation</label>
+<label class="label_radio qn0" for="radio0004"><input name="sample-radio-0" id="radio0004" value="4" type="radio" checked /> Homemaker</label>
+</fieldset> </div> </div>
+<div id="radio1" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
+<fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
+<h3>Your monthly Family income</h3>
+<label class="label_radio qn1" for="radio0101"><input name="sample-radio-1" id="radio0101" value="1" type="radio" checked /> below 50K per month</label>
+<label class="label_radio qn1" for="radio0102"><input name="sample-radio-1" id="radio0102" value="2" type="radio" checked /> 50K - 1lakh per month</label>
+<label class="label_radio qn1" for="radio0103"><input name="sample-radio-1" id="radio0103" value="3" type="radio" checked /> 1lakh - 2lakh per month</label>
+<label class="label_radio qn1" for="radio0104"><input name="sample-radio-1" id="radio0104" value="4" type="radio" checked /> 2lakh -3lakh per month</label>
+<label class="label_radio qn1" for="radio0105"><input name="sample-radio-1" id="radio0105" value="5" type="radio" checked /> 3lakh - 4lakh per month</label>
 <label class="label_radio qn1" for="radio0106"><input name="sample-radio-1" id="radio0106" value="6" type="radio" checked /> 4lakh - 5lakh per month</label>
 <label class="label_radio qn1" for="radio0107"><input name="sample-radio-1" id="radio0107" value="7" type="radio" checked /> 5 lakhs - 10 lakhs per month</label>
 <label class="label_radio qn1" for="radio0108"><input name="sample-radio-1" id="radio0108" value="8" type="radio" checked /> greater than 10 lakhs per month</label>
 </fieldset> </div> </div>
-<div id="radio2" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio2" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>paying my bills and premiums on time are a great inconvenience</h3>
 <label class="label_radio qn2" for="radio0201"><input name="sample-radio-2" id="radio0201" value="1" type="radio" checked /> strongly disagree</label>
@@ -159,8 +161,9 @@
 <label class="label_radio qn2" for="radio0205"><input name="sample-radio-2" id="radio0205" value="5" type="radio" checked /> mostly agree</label>
 <label class="label_radio qn2" for="radio0206"><input name="sample-radio-2" id="radio0206" value="6" type="radio" checked /> strongly agree</label>
 </fieldset> </div> </div>
-<div id="radio3" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio3" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>household chores like groceries, laundry, banking etc are a great inconvenience</h3>
 <label class="label_radio qn3" for="radio0301"><input name="sample-radio-3" id="radio0301" value="1" type="radio" checked /> strongly disagree</label>
@@ -170,8 +173,9 @@
 <label class="label_radio qn3" for="radio0305"><input name="sample-radio-3" id="radio0305" value="5" type="radio" checked /> mostly agree</label>
 <label class="label_radio qn3" for="radio0306"><input name="sample-radio-3" id="radio0306" value="6" type="radio" checked /> strongly agree</label>
 </fieldset> </div> </div>
-<div id="radio4" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio4" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>On average how much time are you busy in a day?</h3>
 <label class="label_radio qn4" for="radio0401"><input name="sample-radio-4" id="radio0401" value="1" type="radio" checked /> less than 1hr</label>
@@ -180,8 +184,9 @@
 <label class="label_radio qn4" for="radio0404"><input name="sample-radio-4" id="radio0404" value="4" type="radio" checked /> 8hrs - 14hrs</label>
 <label class="label_radio qn4" for="radio0405"><input name="sample-radio-4" id="radio0405" value="5" type="radio" checked /> more than 14hrs</label>
 </fieldset> </div> </div>
-<div id="radio5" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio5" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>How much of your time is spent in household chores (groceries, laundry, banking etc..) per week?</h3>
 <label class="label_radio qn5" for="radio0501"><input name="sample-radio-5" id="radio0501" value="1" type="radio" checked /> less than 2 hrs</label>
@@ -191,41 +196,34 @@
 <label class="label_radio qn5" for="radio0505"><input name="sample-radio-5" id="radio0505" value="5" type="radio" checked /> 8hrs - 10 hrs</label>
 <label class="label_radio qn5" for="radio0506"><input name="sample-radio-5" id="radio0506" value="6" type="radio" checked /> above 10 hrs</label>
 </fieldset> </div> </div>
-<div id="radio6" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;" styleid="sizer">
-<fieldset style="height:50%;margin-left:auto;margin-right:auto;" class="checkboxes largeqn">
+<div id="radio6" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
+<fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="checkboxes largeqn">
 <h3>If I had more time I would do (pick top 5)</h3>
-<table>
-<tr>
-<td style="width:50%;">
-<label class="label_check qn6" for="checkbox0601"><input name="sample-radio-601" id="checkbox0601" value="1" type="checkbox" /> work related learning </label>
-<label class="label_check qn6" for="checkbox0602"><input name="sample-radio-602" id="checkbox0602" value="2" type="checkbox" /> hobbies</label>
-<label class="label_check qn6" for="checkbox0603"><input name="sample-radio-603" id="checkbox0603" value="3" type="checkbox" /> travelling</label>
-<label class="label_check qn6" for="checkbox0604"><input name="sample-radio-604" id="checkbox0604" value="4" type="checkbox" /> spending time with family</label>
-<label class="label_check qn6" for="checkbox0605"><input name="sample-radio-605" id="checkbox0605" value="5" type="checkbox" /> exercise</label>
-<label class="label_check qn6" for="checkbox0606"><input name="sample-radio-606" id="checkbox0606" value="6" type="checkbox" /> relaxing (Time pass).</label>
-<label class="label_check qn6" for="checkbox0607"><input name="sample-radio-607" id="checkbox0607" value="7" type="checkbox" /> work on a business Idea</label>
-<label class="label_check qn6" for="checkbox0608"><input name="sample-radio-608" id="checkbox0608" value="8" type="checkbox" /> religious activities</label>
-<label class="label_check qn6" for="checkbox0609"><input name="sample-radio-609" id="checkbox0609" value="9" type="checkbox" /> financial planning</label>
-<label class="label_check qn6" for="checkbox0610"><input name="sample-radio-610" id="checkbox0610" value="10" type="checkbox" /> stock market</label>
-</td>
-<td style="width:50%;">
-<label class="label_check qn6" for="checkbox0611"><input name="sample-radio-611" id="checkbox0611" value="11" type="checkbox" /> spending time with friends</label>
-<label class="label_check qn6" for="checkbox0612"><input name="sample-radio-612" id="checkbox0612" value="12" type="checkbox" /> networking</label>
-<label class="label_check qn6" for="checkbox0613"><input name="sample-radio-613" id="checkbox0613" value="13" type="checkbox" /> shopping</label>
-<label class="label_check qn6" for="checkbox0614"><input name="sample-radio-614" id="checkbox0614" value="14" type="checkbox" /> Touching up the house</label>
-<label class="label_check qn6" for="checkbox0615"><input name="sample-radio-615" id="checkbox0615" value="15" type="checkbox" /> alternate source of income</label>
-<label class="label_check qn6" for="checkbox0616"><input name="sample-radio-616" id="checkbox0616" value="16" type="checkbox" /> self development</label>
-<label class="label_check qn6" for="checkbox0617"><input name="sample-radio-617" id="checkbox0617" value="17" type="checkbox" /> research</label>
-<label class="label_check qn6" for="checkbox0618"><input name="sample-radio-618" id="checkbox0618" value="18" type="checkbox" /> more work</label>
-<label class="label_check qn6" for="checkbox0619"><input name="sample-radio-619" id="checkbox0619" value="19" type="checkbox" /> social work or volunteering</label>
-<label class="label_check qn6" for="checkbox0619"><input name="sample-radio-620" id="checkbox0619" value="19" type="checkbox" /> House Keeping</label>
-</td>
-</tr>
-</table>
+<label class="label_check qn6" for="checkbox0601"><input name="sample-radio-6" id="checkbox0601" value="1" type="checkbox" checked /> work related learning </label>
+<label class="label_check qn6" for="checkbox0602"><input name="sample-radio-6" id="checkbox0602" value="2" type="checkbox" checked /> hobbies</label>
+<label class="label_check qn6" for="checkbox0603"><input name="sample-radio-6" id="checkbox0603" value="3" type="checkbox" checked /> travelling</label>
+<label class="label_check qn6" for="checkbox0604"><input name="sample-radio-6" id="checkbox0604" value="4" type="checkbox" checked /> spending time with family</label>
+<label class="label_check qn6" for="checkbox0605"><input name="sample-radio-6" id="checkbox0605" value="5" type="checkbox" checked /> exercise</label>
+<label class="label_check qn6" for="checkbox0606"><input name="sample-radio-6" id="checkbox0606" value="6" type="checkbox" checked /> relaxing (Time pass).</label>
+<label class="label_check qn6" for="checkbox0607"><input name="sample-radio-6" id="checkbox0607" value="7" type="checkbox" checked /> work on a business Idea</label>
+<label class="label_check qn6" for="checkbox0608"><input name="sample-radio-6" id="checkbox0608" value="8" type="checkbox" checked /> religious activities</label>
+<label class="label_check qn6" for="checkbox0609"><input name="sample-radio-6" id="checkbox0609" value="9" type="checkbox" checked /> financial planning</label>
+<label class="label_check qn6" for="checkbox0610"><input name="sample-radio-6" id="checkbox0610" value="10" type="checkbox" checked /> stock market</label>
+<label class="label_check qn6" for="checkbox0611"><input name="sample-radio-6" id="checkbox0611" value="11" type="checkbox" checked /> spending time with friends</label>
+<label class="label_check qn6" for="checkbox0612"><input name="sample-radio-6" id="checkbox0612" value="12" type="checkbox" checked /> networking</label>
+<label class="label_check qn6" for="checkbox0613"><input name="sample-radio-6" id="checkbox0613" value="13" type="checkbox" checked /> shopping</label>
+<label class="label_check qn6" for="checkbox0614"><input name="sample-radio-6" id="checkbox0614" value="14" type="checkbox" checked /> Touching up the house</label>
+<label class="label_check qn6" for="checkbox0615"><input name="sample-radio-6" id="checkbox0615" value="15" type="checkbox" checked /> alternate source of income</label>
+<label class="label_check qn6" for="checkbox0616"><input name="sample-radio-6" id="checkbox0616" value="16" type="checkbox" checked /> self development</label>
+<label class="label_check qn6" for="checkbox0617"><input name="sample-radio-6" id="checkbox0617" value="17" type="checkbox" checked /> research</label>
+<label class="label_check qn6" for="checkbox0618"><input name="sample-radio-6" id="checkbox0618" value="18" type="checkbox" checked /> more work</label>
+<label class="label_check qn6" for="checkbox0619"><input name="sample-radio-6" id="checkbox0619" value="19" type="checkbox" checked /> social work or volunteering</label>
 </fieldset> </div> </div>
-<div id="radio7" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio7" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>There are aspects of my life or dreams that are important to me that I do not get time to work on.</h3>
 <label class="label_radio qn7" for="radio0701"><input name="sample-radio-7" id="radio0701" value="1" type="radio" checked /> strongly disagree</label>
@@ -235,8 +233,9 @@
 <label class="label_radio qn7" for="radio0705"><input name="sample-radio-7" id="radio0705" value="5" type="radio" checked /> mostly agree</label>
 <label class="label_radio qn7" for="radio0706"><input name="sample-radio-7" id="radio0706" value="6" type="radio" checked /> strongly agree</label>
 </fieldset> </div> </div>
-<div id="radio8" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio8" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>Hiring a personal assistant, to organize and do the chores and other tasks where I am personally not required, appeals to me.</h3>
 <label class="label_radio qn8" for="radio0801"><input name="sample-radio-8" id="radio0801" value="1" type="radio" checked /> strongly disagree</label>
@@ -246,8 +245,9 @@
 <label class="label_radio qn8" for="radio0805"><input name="sample-radio-8" id="radio0805" value="5" type="radio" checked /> mostly agree</label>
 <label class="label_radio qn8" for="radio0806"><input name="sample-radio-8" id="radio0806" value="6" type="radio" checked /> strongly agree</label>
 </fieldset> </div> </div>
-<div id="radio9" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio9" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>Hiring a personal assistant to enhance my life appeals to me</h3>
 <label class="label_radio qn9" for="radio0901"><input name="sample-radio-9" id="radio0901" value="1" type="radio" checked /> strongly disagree</label>
@@ -257,22 +257,24 @@
 <label class="label_radio qn9" for="radio0905"><input name="sample-radio-9" id="radio0905" value="5" type="radio" checked /> mostly agree</label>
 <label class="label_radio qn9" for="radio0906"><input name="sample-radio-9" id="radio0906" value="6" type="radio" checked /> strongly agree</label>
 </fieldset> </div> </div>
-<div id="radio10" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
-<fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios largeqn">
+<div id="radio10" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
+<fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="checkboxes largeqn">
 <h3>what should a personal assistant do? (choose top 5)</h3>
-<label class="label_check qn10" for="checkbox1001"><input name="sample-radio-1001" id="checkbox1001" value="1" type="checkbox" /> do the chores and tasks that do not require my personal presence</label>
-<label class="label_check qn10" for="checkbox1002"><input name="sample-radio-1002" id="checkbox1002" value="2" type="checkbox" /> remind me about my personal commitments</label>
-<label class="label_check qn10" for="checkbox1003"><input name="sample-radio-1003" id="checkbox1003" value="3" type="checkbox" /> work with me and facilitate me to fulfill on my personal goals     </label>
-<label class="label_check qn10" for="checkbox1004"><input name="sample-radio-1004" id="checkbox1004" value="4" type="checkbox" /> be available in times of emergency</label>
-<label class="label_check qn10" for="checkbox1005"><input name="sample-radio-1005" id="checkbox1005" value="5" type="checkbox" /> monitor my time usage in a day and suggest ways to get me more time</label>
-<label class="label_check qn10" for="checkbox1006"><input name="sample-radio-1006" id="checkbox1006" value="6" type="checkbox" /> do research work on things that are important to me, such as best prices of goods, vacation ideas, etc.</label>
-<label class="label_check qn10" for="checkbox1007"><input name="sample-radio-1007" id="checkbox1007" value="7" type="checkbox" /> help me be in touch with my friends and network</label>
-<label class="label_check qn10" for="checkbox1008"><input name="sample-radio-1008" id="checkbox1008" value="8" type="checkbox" /> event management such as parties and get-togethers.</label>
-<label class="label_check qn10" for="checkbox1009"><input name="sample-radio-1009" id="checkbox1009" value="9" type="checkbox" /> motivate me to accomplish my goals</label>
+<label class="label_check qn10" for="checkbox1001"><input name="sample-radio-10" id="checkbox1001" value="1" type="checkbox" checked /> do the chores and tasks that do not require my personal presence</label>
+<label class="label_check qn10" for="checkbox1002"><input name="sample-radio-10" id="checkbox1002" value="2" type="checkbox" checked /> remind me about my personal commitments</label>
+<label class="label_check qn10" for="checkbox1003"><input name="sample-radio-10" id="checkbox1003" value="3" type="checkbox" checked /> work with me and facilitate me to fulfill on my personal goals     </label>
+<label class="label_check qn10" for="checkbox1004"><input name="sample-radio-10" id="checkbox1004" value="4" type="checkbox" checked /> be available in times of emergency</label>
+<label class="label_check qn10" for="checkbox1005"><input name="sample-radio-10" id="checkbox1005" value="5" type="checkbox" checked /> monitor my time usage in a day and suggest ways to get me more time</label>
+<label class="label_check qn10" for="checkbox1006"><input name="sample-radio-10" id="checkbox1006" value="6" type="checkbox" checked /> do research work on things that are important to me, such as best prices of goods, vacation ideas, etc.</label>
+<label class="label_check qn10" for="checkbox1007"><input name="sample-radio-10" id="checkbox1007" value="7" type="checkbox" checked /> help me be in touch with my friends and network</label>
+<label class="label_check qn10" for="checkbox1008"><input name="sample-radio-10" id="checkbox1008" value="8" type="checkbox" checked /> event management such as parties and get-togethers.</label>
+<label class="label_check qn10" for="checkbox1009"><input name="sample-radio-10" id="checkbox1009" value="9" type="checkbox" checked /> motivate me to accomplish my goals</label>
 </fieldset> </div> </div>
-<div id="radio11" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<div id="radio11" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+<br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
 <h3>I would pay a personal assistant</h3>
 <label class="label_radio qn11" for="radio1101"><input name="sample-radio-11" id="radio1101" value="1" type="radio" checked /> less than 1000Rs per month</label>
@@ -281,13 +283,8 @@
 <label class="label_radio qn11" for="radio1104"><input name="sample-radio-11" id="radio1104" value="4" type="radio" checked /> 3000 Rs - 4000Rs per month</label>
 <label class="label_radio qn11" for="radio1105"><input name="sample-radio-11" id="radio1105" value="5" type="radio" checked /> 4000 Rs - 5000Rs per month</label>
 <label class="label_radio qn11" for="radio1106"><input name="sample-radio-11" id="radio1106" value="6" type="radio" checked /> more than 5000Rs per month</label>
+<label class="label_radio qn11" for="radio1107"><input name="sample-radio-11" id="radio1107" value="7" type="radio" checked /></label>
 </fieldset> </div> </div>
-<div id="radio12" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;text-align:center;" styleid="sizer">
-	<input type="hidden" name="surveyconfig" value="initial"\>
-	<input id=sbmtbtn type="submit" value="Submit"/>	
-</div>
-</div>
 </form>
     <div style="width:100%;text-align:center;z-index:-1;">
       <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.php">take us for a spin</a> ?</strong>
