@@ -201,25 +201,26 @@
 <br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="checkboxes largeqn">
 <h3>If I had more time I would do (pick top 5)</h3>
-<label class="label_check qn6" for="checkbox0601"><input name="sample-radio-6" id="checkbox0601" value="1" type="checkbox" checked /> work related learning </label>
-<label class="label_check qn6" for="checkbox0602"><input name="sample-radio-6" id="checkbox0602" value="2" type="checkbox" checked /> hobbies</label>
-<label class="label_check qn6" for="checkbox0603"><input name="sample-radio-6" id="checkbox0603" value="3" type="checkbox" checked /> travelling</label>
-<label class="label_check qn6" for="checkbox0604"><input name="sample-radio-6" id="checkbox0604" value="4" type="checkbox" checked /> spending time with family</label>
-<label class="label_check qn6" for="checkbox0605"><input name="sample-radio-6" id="checkbox0605" value="5" type="checkbox" checked /> exercise</label>
-<label class="label_check qn6" for="checkbox0606"><input name="sample-radio-6" id="checkbox0606" value="6" type="checkbox" checked /> relaxing (Time pass).</label>
-<label class="label_check qn6" for="checkbox0607"><input name="sample-radio-6" id="checkbox0607" value="7" type="checkbox" checked /> work on a business Idea</label>
-<label class="label_check qn6" for="checkbox0608"><input name="sample-radio-6" id="checkbox0608" value="8" type="checkbox" checked /> religious activities</label>
-<label class="label_check qn6" for="checkbox0609"><input name="sample-radio-6" id="checkbox0609" value="9" type="checkbox" checked /> financial planning</label>
-<label class="label_check qn6" for="checkbox0610"><input name="sample-radio-6" id="checkbox0610" value="10" type="checkbox" checked /> stock market</label>
-<label class="label_check qn6" for="checkbox0611"><input name="sample-radio-6" id="checkbox0611" value="11" type="checkbox" checked /> spending time with friends</label>
-<label class="label_check qn6" for="checkbox0612"><input name="sample-radio-6" id="checkbox0612" value="12" type="checkbox" checked /> networking</label>
-<label class="label_check qn6" for="checkbox0613"><input name="sample-radio-6" id="checkbox0613" value="13" type="checkbox" checked /> shopping</label>
-<label class="label_check qn6" for="checkbox0614"><input name="sample-radio-6" id="checkbox0614" value="14" type="checkbox" checked /> Touching up the house</label>
-<label class="label_check qn6" for="checkbox0615"><input name="sample-radio-6" id="checkbox0615" value="15" type="checkbox" checked /> alternate source of income</label>
-<label class="label_check qn6" for="checkbox0616"><input name="sample-radio-6" id="checkbox0616" value="16" type="checkbox" checked /> self development</label>
-<label class="label_check qn6" for="checkbox0617"><input name="sample-radio-6" id="checkbox0617" value="17" type="checkbox" checked /> research</label>
-<label class="label_check qn6" for="checkbox0618"><input name="sample-radio-6" id="checkbox0618" value="18" type="checkbox" checked /> more work</label>
-<label class="label_check qn6" for="checkbox0619"><input name="sample-radio-6" id="checkbox0619" value="19" type="checkbox" checked /> social work or volunteering</label>
+<label class="label_check qn6" for="checkbox0601"><input name="sample-radio-601" id="checkbox0601" value="1" type="checkbox" checked /> work related learning </label>
+<label class="label_check qn6" for="checkbox0602"><input name="sample-radio-602" id="checkbox0602" value="2" type="checkbox" checked /> hobbies</label>
+<label class="label_check qn6" for="checkbox0603"><input name="sample-radio-603" id="checkbox0603" value="3" type="checkbox" checked /> travelling</label>
+<label class="label_check qn6" for="checkbox0604"><input name="sample-radio-604" id="checkbox0604" value="4" type="checkbox" checked /> spending time with family</label>
+<label class="label_check qn6" for="checkbox0605"><input name="sample-radio-605" id="checkbox0605" value="5" type="checkbox" checked /> exercise</label>
+<label class="label_check qn6" for="checkbox0606"><input name="sample-radio-606" id="checkbox0606" value="6" type="checkbox" checked /> relaxing (Time pass).</label>
+<label class="label_check qn6" for="checkbox0607"><input name="sample-radio-607" id="checkbox0607" value="7" type="checkbox" checked /> work on a business Idea</label>
+<label class="label_check qn6" for="checkbox0608"><input name="sample-radio-608" id="checkbox0608" value="8" type="checkbox" checked /> religious activities</label>
+<label class="label_check qn6" for="checkbox0609"><input name="sample-radio-609" id="checkbox0609" value="9" type="checkbox" checked /> financial planning</label>
+<label class="label_check qn6" for="checkbox0610"><input name="sample-radio-610" id="checkbox0610" value="10" type="checkbox" checked /> stock market</label>
+<label class="label_check qn6" for="checkbox0611"><input name="sample-radio-611" id="checkbox0611" value="11" type="checkbox" checked /> spending time with friends</label>
+<label class="label_check qn6" for="checkbox0612"><input name="sample-radio-612" id="checkbox0612" value="12" type="checkbox" checked /> networking</label>
+<label class="label_check qn6" for="checkbox0613"><input name="sample-radio-613" id="checkbox0613" value="13" type="checkbox" checked /> shopping</label>
+<label class="label_check qn6" for="checkbox0614"><input name="sample-radio-614" id="checkbox0614" value="14" type="checkbox" checked /> Touching up the house</label>
+<label class="label_check qn6" for="checkbox0615"><input name="sample-radio-615" id="checkbox0615" value="15" type="checkbox" checked /> alternate source of income</label>
+<label class="label_check qn6" for="checkbox0616"><input name="sample-radio-616" id="checkbox0616" value="16" type="checkbox" checked /> self development</label>
+<label class="label_check qn6" for="checkbox0617"><input name="sample-radio-617" id="checkbox0617" value="17" type="checkbox" checked /> research</label>
+<label class="label_check qn6" for="checkbox0618"><input name="sample-radio-618" id="checkbox0618" value="18" type="checkbox" checked /> more work</label>
+<label class="label_check qn6" for="checkbox0619"><input name="sample-radio-619" id="checkbox0619" value="19" type="checkbox" checked /> social work or volunteering</label>
+<label class="label_check qn6" for="checkbox0620"><input name="sample-radio-620" id="checkbox0620" value="20" type="checkbox" /> House Keeping</label>
 </fieldset> </div> </div>
 <div id="radio7" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
 <div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
@@ -262,15 +263,15 @@
 <br>
 <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="checkboxes largeqn">
 <h3>what should a personal assistant do? (choose top 5)</h3>
-<label class="label_check qn10" for="checkbox1001"><input name="sample-radio-10" id="checkbox1001" value="1" type="checkbox" checked /> do the chores and tasks that do not require my personal presence</label>
-<label class="label_check qn10" for="checkbox1002"><input name="sample-radio-10" id="checkbox1002" value="2" type="checkbox" checked /> remind me about my personal commitments</label>
-<label class="label_check qn10" for="checkbox1003"><input name="sample-radio-10" id="checkbox1003" value="3" type="checkbox" checked /> work with me and facilitate me to fulfill on my personal goals     </label>
-<label class="label_check qn10" for="checkbox1004"><input name="sample-radio-10" id="checkbox1004" value="4" type="checkbox" checked /> be available in times of emergency</label>
-<label class="label_check qn10" for="checkbox1005"><input name="sample-radio-10" id="checkbox1005" value="5" type="checkbox" checked /> monitor my time usage in a day and suggest ways to get me more time</label>
-<label class="label_check qn10" for="checkbox1006"><input name="sample-radio-10" id="checkbox1006" value="6" type="checkbox" checked /> do research work on things that are important to me, such as best prices of goods, vacation ideas, etc.</label>
-<label class="label_check qn10" for="checkbox1007"><input name="sample-radio-10" id="checkbox1007" value="7" type="checkbox" checked /> help me be in touch with my friends and network</label>
-<label class="label_check qn10" for="checkbox1008"><input name="sample-radio-10" id="checkbox1008" value="8" type="checkbox" checked /> event management such as parties and get-togethers.</label>
-<label class="label_check qn10" for="checkbox1009"><input name="sample-radio-10" id="checkbox1009" value="9" type="checkbox" checked /> motivate me to accomplish my goals</label>
+<label class="label_check qn10" for="checkbox1001"><input name="sample-radio-1001" id="checkbox1001" value="1" type="checkbox" checked /> do the chores and tasks that do not require my personal presence</label>
+<label class="label_check qn10" for="checkbox1002"><input name="sample-radio-1002" id="checkbox1002" value="2" type="checkbox" checked /> remind me about my personal commitments</label>
+<label class="label_check qn10" for="checkbox1003"><input name="sample-radio-1003" id="checkbox1003" value="3" type="checkbox" checked /> work with me and facilitate me to fulfill on my personal goals     </label>
+<label class="label_check qn10" for="checkbox1004"><input name="sample-radio-1004" id="checkbox1004" value="4" type="checkbox" checked /> be available in times of emergency</label>
+<label class="label_check qn10" for="checkbox1005"><input name="sample-radio-1005" id="checkbox1005" value="5" type="checkbox" checked /> monitor my time usage in a day and suggest ways to get me more time</label>
+<label class="label_check qn10" for="checkbox1006"><input name="sample-radio-1006" id="checkbox1006" value="6" type="checkbox" checked /> do research work on things that are important to me, such as best prices of goods, vacation ideas, etc.</label>
+<label class="label_check qn10" for="checkbox1007"><input name="sample-radio-1007" id="checkbox1007" value="7" type="checkbox" checked /> help me be in touch with my friends and network</label>
+<label class="label_check qn10" for="checkbox1008"><input name="sample-radio-1008" id="checkbox1008" value="8" type="checkbox" checked /> event management such as parties and get-togethers.</label>
+<label class="label_check qn10" for="checkbox1009"><input name="sample-radio-1009" id="checkbox1009" value="9" type="checkbox" checked /> motivate me to accomplish my goals</label>
 </fieldset> </div> </div>
 <div id="radio11" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
 <div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">

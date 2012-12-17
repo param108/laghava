@@ -23,7 +23,7 @@ for i in range(0,12):
 		if qtype == "radio":
 			template.append('<label class="label_radio '+"qn"+str(i)+'" for="'+radiodet+'"><input name="sample-radio-'+str(i)+'" id="'+radiodet+'" value="'+str(choice)+'" type="radio" checked />'+ans+'</label>') 
 		else:
-			template.append('<label class="label_check '+"qn"+str(i)+'" for="'+radiodet+'"><input name="sample-radio-'+str(i)+'" id="'+radiodet+'" value="'+str(choice)+'" type="checkbox" checked />'+ans+'</label>') 
+			template.append('<label class="label_check '+"qn"+str(i)+'" for="'+radiodet+'"><input name="sample-radio-'+str(i)+asuffix+'" id="'+radiodet+'" value="'+str(choice)+'" type="checkbox" checked />'+ans+'</label>') 
 		choice = choice + 1
         template.append('</fieldset> </div> </div>')
 for line in template:

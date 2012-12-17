@@ -219,7 +219,7 @@
 <label class="label_check qn6" for="checkbox0617"><input name="sample-radio-617" id="checkbox0617" value="17" type="checkbox" /> research</label>
 <label class="label_check qn6" for="checkbox0618"><input name="sample-radio-618" id="checkbox0618" value="18" type="checkbox" /> more work</label>
 <label class="label_check qn6" for="checkbox0619"><input name="sample-radio-619" id="checkbox0619" value="19" type="checkbox" /> social work or volunteering</label>
-<label class="label_check qn6" for="checkbox0619"><input name="sample-radio-620" id="checkbox0619" value="19" type="checkbox" /> House Keeping</label>
+<label class="label_check qn6" for="checkbox0620"><input name="sample-radio-620" id="checkbox0620" value="20" type="checkbox" /> House Keeping</label>
 </td>
 </tr>
 </table>
