@@ -3,6 +3,11 @@
 	include_once("php/stats.php");
 	if (!check_if_spider()) {
 		session_start();
+		if ((isset($_SESSION["laghstate"]) && $_SESSION["laghstate"]!="entersurvey") || !isset($_SESSION["laghstate"])) {
+                        header( 'Location: survey.php');
+                        exit(); 
+                };
+                $_SESSION["laghstate"] = "contsurvey";
 		stats_update_event("HIT_MSURVEY_CONTINUE");
 	}
 ?>

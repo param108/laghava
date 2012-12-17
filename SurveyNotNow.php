@@ -3,6 +3,7 @@
 	include_once("php/stats.php");
 	if (!check_if_spider()) {
 		session_start();
+                $_SESSION["laghstate"]="donotsurvey";
 		stats_update_event("HIT_SURVEY_NOTNOW");
 	}
 ?>

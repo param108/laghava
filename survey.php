@@ -4,7 +4,8 @@
 	include_once("php/stats.php");
 	if (!check_if_spider()) {
 		session_start();
-		stats_update_event("HIT_MSURVEY_ENTRY");
+		$_SESSION["laghstate"]="entersurvey";
+		stats_update_event("HIT_SURVEY_ENTRY");
 	}
 ?>
 <!DOCTYPE html>
