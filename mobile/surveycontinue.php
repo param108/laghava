@@ -71,12 +71,12 @@
 		       },100);	
 	}
     };
-    $(document).resize(function() {
-		if ($(".qn"+qn).height() > $(document).height()) {
-			$(".qn"+qn).height(0.5*$(document).height());
-		}
-	}
-    );
+//    $(document).resize(function() {
+//		if ($(".qn"+qn).height() > $(document).height()) {
+//			$(".qn"+qn).height(0.5*$(document).height());
+//		}
+//	}
+//    );
     var turn_radio = function() {
         var inp = gebtn(this,'input')[0];
 	if ($(this).hasClass("r_off")) {
