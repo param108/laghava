@@ -7,7 +7,7 @@
 	}
 ?>
 <!DOCTYPE html>
-<html>
+<html style="height:100%;">
   <head>
     <script src="js/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -111,38 +111,39 @@
     <link href="css/checkboxes.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
-  <body>
+  <body style="height:100%;">
     <div id="coverpg" style="background-image:url('img/design.png');position:fixed;margin-left:auto;margin-right:auto;top:0px;left:0px;text-align:center;height:100%;width:100%;">
       <p class="lead" style="margin-top:15%;font-size:25px;">
         Survey Loading.... Please wait.
       </p>
     </div>
-    <div style="color:azure; background-image:url('img/titlebg.png');background-repeat:repeat-x;display:block;width:100%;height:10%;top:0;">
-      <div style="margin:auto;margin-left:auto;margin-right:auto;width:70%;height:10%">
+    <div style="color:azure; background-image:url('img/titlebg.png');background-repeat:repeat-x;display:block;width:100%;top:0;">
+      <div style="padding-top:5px;padding-bottom:5px;margin-left:auto;margin-right:auto;width:70%;height:10%">
 	<div style="height:100%;">
-	  <b style="line-height:50px;font-size:30px;height:100%;"><a style="color:black;" href="index.php">lAghavA:</a></b><i style="color:azure;font-size:20px;">lightness of Being</i>
+	  <b style="font-size:x-large;height:100%;"><a style="color:black;" href="index.php">lAghavA:</a></b><i style="color:azure;">lightness of Being</i>
 	</div>
       </div>
     </div>
-<form id="surveyform" style="display:none;" action="php/getsurvey.php" method="post" accept-charset="utf-8">
-<div id="radio0" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;left:15%;max-height:50%;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
-<fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
-<h3>Your Occupation</h3>
-<label class="label_radio qn0" for="radio0001"><input name="sample-radio-0" id="radio0001" value="1" type="radio" checked /> self employed</label>
-<label class="label_radio qn0" for="radio0002"><input name="sample-radio-0" id="radio0002" value="2" type="radio" checked /> unemployed</label>
-<label class="label_radio qn0" for="radio0003"><input name="sample-radio-0" id="radio0003" value="3" type="radio" checked /> employed in a company of corporation</label>
-<label class="label_radio qn0" for="radio0004"><input name="sample-radio-0" id="radio0004" value="4" type="radio" checked /> Homemaker</label>
-</fieldset> </div> </div>
-<div id="radio1" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;max-height:50%;">
-<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
-<fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
-<h3>Your monthly Family income</h3>
-<label class="label_radio qn1" for="radio0101"><input name="sample-radio-1" id="radio0101" value="1" type="radio" checked /> below 50K per month</label>
-<label class="label_radio qn1" for="radio0102"><input name="sample-radio-1" id="radio0102" value="2" type="radio" checked /> 50K - 1lakh per month</label>
-<label class="label_radio qn1" for="radio0103"><input name="sample-radio-1" id="radio0103" value="3" type="radio" checked /> 1lakh - 2lakh per month</label>
-<label class="label_radio qn1" for="radio0104"><input name="sample-radio-1" id="radio0104" value="4" type="radio" checked /> 2lakh -3lakh per month</label>
-<label class="label_radio qn1" for="radio0105"><input name="sample-radio-1" id="radio0105" value="5" type="radio" checked /> 3lakh - 4lakh per month</label>
+    <form id="surveyform" style="display:none;" action="php/getsurvey.php" method="post" accept-charset="utf-8">
+      <div id="radio0" style="margin-left:auto;margin-right:auto;width:100%;text-align:left;display:block;left:15%;max-height:50%;">
+	<div style="position:relative;width:95%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+	  <br>
+	  <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
+	    <h3>Your Occupation</h3>
+	    <label class="label_radio qn0" for="radio0001"><input name="sample-radio-0" id="radio0001" value="1" type="radio" checked /> self employed</label>
+	    <label class="label_radio qn0" for="radio0002"><input name="sample-radio-0" id="radio0002" value="2" type="radio" checked /> unemployed</label>
+	    <label class="label_radio qn0" for="radio0003"><input name="sample-radio-0" id="radio0003" value="3" type="radio" checked /> employed in a company of corporation</label>
+	    <label class="label_radio qn0" for="radio0004"><input name="sample-radio-0" id="radio0004" value="4" type="radio" checked /> Homemaker</label>
+      </fieldset> </div> </div>
+      <div id="radio1" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;max-height:50%;">
+	<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;" styleid="sizer">
+	  <fieldset style="height:30%;margin-left:auto;margin-right:auto;" class="radios">
+	    <h3>Your monthly Family income</h3>
+	    <label class="label_radio qn1" for="radio0101"><input name="sample-radio-1" id="radio0101" value="1" type="radio" checked /> below 50K per month</label>
+	    <label class="label_radio qn1" for="radio0102"><input name="sample-radio-1" id="radio0102" value="2" type="radio" checked /> 50K - 1lakh per month</label>
+	    <label class="label_radio qn1" for="radio0103"><input name="sample-radio-1" id="radio0103" value="3" type="radio" checked /> 1lakh - 2lakh per month</label>
+	    <label class="label_radio qn1" for="radio0104"><input name="sample-radio-1" id="radio0104" value="4" type="radio" checked /> 2lakh -3lakh per month</label>
+	    <label class="label_radio qn1" for="radio0105"><input name="sample-radio-1" id="radio0105" value="5" type="radio" checked /> 3lakh - 4lakh per month</label>
 <label class="label_radio qn1" for="radio0106"><input name="sample-radio-1" id="radio0106" value="6" type="radio" checked /> 4lakh - 5lakh per month</label>
 <label class="label_radio qn1" for="radio0107"><input name="sample-radio-1" id="radio0107" value="7" type="radio" checked /> 5 lakhs - 10 lakhs per month</label>
 <label class="label_radio qn1" for="radio0108"><input name="sample-radio-1" id="radio0108" value="8" type="radio" checked /> greater than 10 lakhs per month</label>
@@ -288,7 +289,7 @@
 </div>
 </div>
 </form>
-    <div style="width:100%;position:absolute;top:90%;text-align:center;z-index:-1;">
+    <div style="width:100%;text-align:center;z-index:-1;">
       <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="willcall.php">take us for a spin</a> ?</strong>
     </div>
   </body>

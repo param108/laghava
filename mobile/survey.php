@@ -8,8 +8,8 @@
 	}
 ?>
 <!DOCTYPE html>
-<html>
-  <head>
+<html style="height:100%;">
+<head>
     <script src="js/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <title>lAghavA:lightness of being</title>
@@ -17,7 +17,7 @@
     <link href="css/checkboxes.css" rel="stylesheet" media="screen"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
   </head>
-  <body>
+	  <body style="height:100%";>
     <div style="color:azure; background-image:url('img/titlebg.png');background-repeat:repeat-x;display:block;width:100%;top:0;">
       <div style="padding-top:5px;padding-bottom:5px;margin-left:auto;margin-right:auto;width:70%;height:10%">
 	<div style="height:100%;">
