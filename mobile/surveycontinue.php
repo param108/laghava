@@ -285,6 +285,12 @@
 <label class="label_radio qn11" for="radio1106"><input name="sample-radio-11" id="radio1106" value="6" type="radio" checked /> more than 5000Rs per month</label>
 <label class="label_radio qn11" for="radio1107"><input name="sample-radio-11" id="radio1107" value="7" type="radio" checked /></label>
 </fieldset> </div> </div>
+<div id="radio12" style="margin-left:auto;margin-right:auto;width:70%;text-align:left;display:block;">
+<div style="position:relative;width:70%;margin-left:auto;margin-right:auto;height:30%;text-align:center;" styleid="sizer">
+	<input type="hidden" name="surveyconfig" value="initial"\>
+	<input id=sbmtbtn type="submit" value="Submit"/>	
+</div>
+</div>
 </form>
     <div style="width:100%;text-align:center;z-index:-1;">
       <strong style="font-size:25px;">Interested in taking your life to the next level? Why not <a class="btn btn-primary" href="http://www.laghava.com/willcall.php">take us for a spin</a> ?</strong>
