@@ -2,6 +2,7 @@
 include_once("dbconfig.php");
 include_once("spider.php");
 include_once("stats.php");
+include_once("dbm.class.php");
 if (!check_if_spider()) {
 	session_start();
 	stats_update_event("HIT_GETSURVEY");
@@ -34,19 +35,18 @@ foreach ($obj->data as $key) {
 	}
 }
 
-$link = mysql_connect(DBHOST,DBUSER,DBPASS);
-if (!$link) {
-        error_log("Could not connect to mysql");
-        redirect_to_home();
-}
-mysql_select_db("laghuserdata",$link);
+$link = new dbm(DBHOST,"laghuserdata",DBUSER,DBPASS);
+
 $query = "insert into surveydata values ('$surveyname'";
+
 foreach($out as $val) {
     $query = $query.",'$val'";
 }
+
 $query = $query.");";
-mysql_query("$query",$link);
-mysql_close($link);
+
+$link->m_dbh->query("$query",$link);
+$link->m_dbh->commit();
 
 redirect_to_home();
 

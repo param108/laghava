@@ -2,6 +2,7 @@
 include_once("dbconfig.php");
 include_once("spider.php");
 include_once("stats.php");
+include_once("dbm.class.php");
 if (!check_if_spider()) {
 	session_start();
 	stats_update_event("HIT_ADDNEWINTEREST");
@@ -98,13 +99,8 @@ if (!validEmail($value)) {
 	error_log("invalid email");
 	redirect_to_home();
 }
-$link = mysql_connect(DBHOST,DBUSER,DBPASS);
-if (!$link) {
-	error_log("Could not connect to mysql");
-	redirect_to_home();
-}
-mysql_select_db("laghuserdata",$link);
-mysql_query("insert into interestedUsers value ('$value');",$link);
-mysql_close($link);
+$link = new dbm(DBHOST,"laghuserdata",DBUSER,DBPASS);
+$link->m_dbh->query("insert into interestedUsers value ('$value');",$link);
+$link->m_dbh->commit();
 
 redirect_to_success();
