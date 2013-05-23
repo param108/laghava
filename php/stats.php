@@ -13,6 +13,6 @@ if (defined('STATS_ENABLE') && STATS_ENABLE == true) {
     error_log('Invalid query: ' . mysql_error());
     die();
   }
-  $link->m_dbh->commit($link);
+  $link->m_dbh->commit();
 }
 }
