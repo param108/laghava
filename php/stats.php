@@ -1,4 +1,5 @@
 <?php
+include_once("debug.php");
 include_once("dbconfig.php");
 include_once("dbm.class.php");
 
@@ -10,9 +11,8 @@ if (defined('STATS_ENABLE') && STATS_ENABLE == true) {
   $link = new dbm(DBHOST,"laghuserdata",DBUSER,DBPASS);
   $result = $link->m_dbh->query("insert into userevents values  (NOW(),'".session_id()."','".$event."','".substr($_SERVER['HTTP_USER_AGENT'],0,40)."','".$c1."','".$c2."','".$c3."','".$c4."','".$c5."','".$d1."','".$d2."','".$d3."','".$d4."','".$d5."');");
   if (!$result) {
-    error_log('Invalid query: ' . mysql_error());
+    mylog('Invalid query: ' . mysql_error());
     die();
   }
-  $link->m_dbh->commit();
 }
 }

@@ -1,5 +1,5 @@
 <?php
-
+include_once("debug.php");
 class dbm {
   /**
    * The db handle
@@ -18,7 +18,7 @@ class dbm {
     try {
       $this->m_dbh = new PDO($dsn, $user, $pass);
     } catch (PDOException $e) {
-      error_log( 'Connection failed: ' . $e->getMessage());
+      mylog( 'Connection failed: ' . $e->getMessage());
       die();
     }
   }

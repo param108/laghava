@@ -1,4 +1,5 @@
 <?php
+include_once("debug.php");
 include_once("dbconfig.php");
 include_once("spider.php");
 include_once("stats.php");
@@ -15,14 +16,14 @@ function redirect_to_home() {
 # get db config, survey config and dump
 # based on embedded secret data
 if (!array_key_exists("surveyconfig",$_POST)) {
-	error_log("Failed to find type of survey.... dying");
+	mylog("Failed to find type of survey.... dying");
 	redirect_to_home();
 }
 $surveyname = $_POST["surveyconfig"];
 $out = array();
 $dbdatafile = "dbconfig/".$surveyname.".php";
 if (!file_exists($dbdatafile)) {
-	error_log("could not find survey data.... dying");
+	mylog("could not find survey data.... dying");
 	redirect_to_home();
 }
 include_once($dbdatafile);
@@ -46,7 +47,6 @@ foreach($out as $val) {
 $query = $query.");";
 
 $link->m_dbh->query("$query",$link);
-$link->m_dbh->commit();
 
 redirect_to_home();
 

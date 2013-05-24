@@ -1,4 +1,5 @@
 <?php
+include_once("debug.php");
 include_once("dbconfig.php");
 include_once("spider.php");
 include_once("stats.php");
@@ -91,16 +92,15 @@ function validEmail($email)
 $value = $_POST["emailaddress"];
 
 if (strlen($value) > 100) {
-	error_log("input value too long");
+	mylog("input value too long");
 	redirect_to_home();
 }
 
 if (!validEmail($value)) {
-	error_log("invalid email");
+	mylog("invalid email");
 	redirect_to_home();
 }
 $link = new dbm(DBHOST,"laghuserdata",DBUSER,DBPASS);
 $link->m_dbh->query("insert into interestedUsers value ('$value');",$link);
-$link->m_dbh->commit();
 
 redirect_to_success();
