@@ -9,6 +9,8 @@ function stats_update_event($event, $c1="",$c2="",$c3="",$c4="",$c5="",
 {
 if (defined('STATS_ENABLE') && STATS_ENABLE == true) {
   $link = new dbm(DBHOST,"laghuserdata",DBUSER,DBPASS);
+  //over-riding $c1
+  $c1 = substr($_SERVER['HTTP_REFERER'],0,40);
   $result = $link->m_dbh->query("insert into userevents values  (NOW(),'".session_id()."','".$event."','".substr($_SERVER['HTTP_USER_AGENT'],0,40)."','".$c1."','".$c2."','".$c3."','".$c4."','".$c5."','".$d1."','".$d2."','".$d3."','".$d4."','".$d5."');");
   if (!$result) {
     mylog('Invalid query: ' . mysql_error());
