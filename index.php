@@ -86,6 +86,7 @@
       </div>
     </div>
     <div class="menubar" link="azure" alink="azure" vlink="khaki" style="margin-top:-1px;margin-left:auto;margin-right:auto;width:70%;text-align:right;" >
+    <div style="display:inline-block;padding-bottom:5px;padding-top:5px;padding-left:5px;padding-right:5px;margin-top:0;margin-left:2px;margin-right:2px;background:#245982;color:azure"><a class="menubarlink" href="aboutus.html"><b>About us</b></a></div>
     <div style="display:inline-block;padding-bottom:5px;padding-top:5px;padding-left:5px;padding-right:5px;margin-top:0;margin-left:2px;margin-right:2px;background:#245982;color:azure"><a class="menubarlink" href="methodology.html"><b>Methodology</b></a></div>
     <div style="display:inline-block;padding-top:5px;padding-right:5px;padding-left:5px;padding-bottom:5px;margin-left:2px;margin-right:2px;background:#245982;color:azure"><a class="menubarlink" href="survey.php"><b>Survey</b></a></div>
     </div>
